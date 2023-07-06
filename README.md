@@ -52,7 +52,8 @@
 
 # The G-EDM
 
-[<img src="https://abload.de/img/22aqche.png">]
-[<img src="https://abload.de/img/1dlewg.jpg">]
+<img src="https://abload.de/img/22aqche.png">
+
+<img src="https://abload.de/img/1dlewg.jpg">
     
 
