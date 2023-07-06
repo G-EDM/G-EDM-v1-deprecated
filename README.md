@@ -60,3 +60,5 @@
     
 <img src="https://github.com/G-EDM/G-EDM/blob/main/images/pcbs/1.jpg">
 
+<img src="https://github.com/G-EDM/G-EDM/blob/main/3D-files/ESP32-Controlbox/final-panel.png">
+
