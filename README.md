@@ -26,7 +26,7 @@
 
 # What this repository will provide
 
-    * Gerber files for different PCBs used in the G-EDM electricla discharge machine
+    * Gerber files for different PCBs used in the G-EDM electrical discharge machine
     * A highly customized GRBL fork with XYZA Axis support with SD Card and touch screen support
     * A build tutorial 
     * All 3D files
