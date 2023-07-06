@@ -56,6 +56,9 @@
 
 This picture is not up-to-date. A lot has changed. The variable 30v bench PSU is not needed anymore and has been replaced by a 12v PSU that is mounted within the spark generator. This build can be used as single axis sinker/drill EDM but also as multiaxis CNC. Both is possible.
 
+The old controlpanel was replaced by a nice looking one too with better cable management.
+
+
 <img src="https://abload.de/img/1dlewg.jpg">
 
 <img src="https://github.com/G-EDM/G-EDM/blob/main/images/pcbs/6.jpg">
