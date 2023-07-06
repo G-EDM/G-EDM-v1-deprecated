@@ -7,10 +7,12 @@
 
 
 
+
 # License
 
     All files provided are for personal use only. Any form of commercial use is prohibited. 
     
+
     
 
 # What this repository will provide
@@ -20,11 +22,15 @@
     * A build tutorial 
     * All 3D files
     
+
     
 # Follow the project on youtube:
 
-[a link](https://www.youtube.com/@G-EDM/videos)
+[Follow the project on Youtube](https://www.youtube.com/@G-EDM/videos)
 
+
+
+# The G-EDM
 
 [<img src="https://abload.de/img/22aqche.png">]
 [<img src="https://abload.de/img/1dlewg.jpg">]
