@@ -1,3 +1,6 @@
+Work in progress. This reposity only includes the 3D files and some images at the moment!
+
+
 # Let there be sparks... ⚡⚡⚡
 
 ```diff
