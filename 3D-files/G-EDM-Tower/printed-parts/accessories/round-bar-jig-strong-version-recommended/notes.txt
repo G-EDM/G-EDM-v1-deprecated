@@ -1,0 +1,13 @@
+This jig can be used to drill 12mm round bars like axles or the shafts of C12-ER16 collet chucks to use them with internal waterflow.
+
+The reamer chuck can be sued to enlarge the bore. In reamer mode the water flows from the bottom through the pilot hole while z moves up and down.
+
+For deep holes the normal brass tubes won't work very good if the inner diameter is too small. There are special EDM tubes available that have multiple tubes pressed into a normal tube. This prevents a long tiny metal spike that builds up with normal tubes and cloggs it at some point.
+
+The deeper the hole is the better the pump should be. Low flow is ok if it has enough pressure. For my purposes the 12v peristaltic pump works. A second one in series would produce more pressure.
+
+
+Aluminumtubes are not precision parts. My 40mm OD x 32mm ID tubes are 40mm x 32.1mm. So I needed oversized parts. The parts are named. Choose the size that fits your need.
+
+
+Add some gluestick or strong hairspray to the printer bed for the big pipe stand and a 20mm brim. Without it will wrap heavily 100%.

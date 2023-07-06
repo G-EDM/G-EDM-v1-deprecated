@@ -1,0 +1,6 @@
+The big enclosure body was printed with PLA+ flipped 90° to the left with the biggest brim possible and some large antiwarping patches. Hairspray on the bed helps alot.
+
+Printed with zero supports. The displaywindow was just bridged. No problems.
+
+
+The top lid can be printed with the text down and again without supports. 

@@ -1,0 +1,3 @@
+t the moment the software doesn't support a Nema17 as spindle motor. But this will change later.
+
+For now the spindlemotor is a geared 12v DC motor with a 4mm shaft.
