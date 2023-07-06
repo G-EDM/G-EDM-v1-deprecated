@@ -1,5 +1,14 @@
 # Let there be sparks... ⚡⚡⚡
 
+```diff
++  ██████        ███████ ██████  ███    ███  
++ ██             ██      ██   ██ ████  ████  
++ ██   ███ █████ █████   ██   ██ ██ ████ ██ 
++ ██    ██       ██      ██   ██ ██  ██  ██ 
++  ██████        ███████ ██████  ██      ██ 
+```
+
+
 # About the G-EDM
 
     The G-EDM is a multi axis electrical discharge CNC machine that enables you to cut any kind of steel with just some electricity and water.
