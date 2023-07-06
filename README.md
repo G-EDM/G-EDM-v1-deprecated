@@ -8,6 +8,15 @@
 
 
 
+# Legal notes
+
+    The author of this project is in no way responsible for whatever people do with it.
+
+    No warranty. 
+
+
+
+
 # License
 
     All files provided are for personal use only. Any form of commercial use is prohibited. 
@@ -21,6 +30,7 @@
     * A highly customized GRBL fork with XYZA Axis support with SD Card and touch screen support
     * A build tutorial 
     * All 3D files
+
     
 
     
