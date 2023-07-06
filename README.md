@@ -30,7 +30,3 @@
 [<img src="https://abload.de/img/1dlewg.jpg">]
     
 
-
-
-- ⚡ Fun fact: ...
--->
