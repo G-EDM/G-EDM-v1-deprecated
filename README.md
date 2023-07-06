@@ -55,5 +55,8 @@
 <img src="https://abload.de/img/22aqche.png">
 
 <img src="https://abload.de/img/1dlewg.jpg">
+
+<img src="https://github.com/G-EDM/G-EDM/blob/main/images/pcbs/6.jpg">
     
+<img src="https://github.com/G-EDM/G-EDM/blob/main/images/pcbs/1.jpg">
 
