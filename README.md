@@ -1,16 +1,36 @@
-### Hi there 👋
+# Let there be sparks... ⚡⚡⚡
 
-<!--
-**G-EDM/G-EDM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# About the G-EDM
 
-Here are some ideas to get you started:
+    The G-EDM is a multi axis electrical discharge CNC machine that enables you to cut any kind of steel with just some electricity and water.
+    EDM uses tiny electrical discharges to cut conductive materials and is a silent and precise way to create all kinds of shapes out of almost any kind of metal.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
+
+
+# License
+
+    All files provided are for personal use only. Any form of commercial use is prohibited. 
+    
+    
+
+# What this repository will provide
+
+    * Gerber files for different PCBs used in the G-EDM electricla discharge machine
+    * A highly customized GRBL fork with XYZA Axis support with SD Card and touch screen support
+    * A build tutorial 
+    * All 3D files
+    
+    
+# Follow the project on youtube:
+
+[a link](https://www.youtube.com/@G-EDM/videos)
+
+
+[<img src="https://abload.de/img/22aqche.png">]
+[<img src="https://abload.de/img/1dlewg.jpg">]
+    
+
+
+
 - ⚡ Fun fact: ...
 -->
