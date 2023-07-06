@@ -26,7 +26,7 @@
     
 # Follow the project on youtube:
 
-[>>>Follow the project on Youtube<<<](https://www.youtube.com/@G-EDM/videos)
+[>>> Follow the project on Youtube <<<](https://www.youtube.com/@G-EDM/videos)
 
 
 
