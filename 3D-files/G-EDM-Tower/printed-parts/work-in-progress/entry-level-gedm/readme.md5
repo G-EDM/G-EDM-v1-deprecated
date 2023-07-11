@@ -1,0 +1,20 @@
+# About the entry level G-EDM
+
+    This version is supposed to be a budget entry level EDM machine
+    At the moment this is only a 1 axis sinker/drill EDM 
+    
+    
+# Changelog
+
+    Instead of a large 120x80 Extrusion it uses a small and cheap 4040 extrusion as backbone
+    It also uses a cheap 15180 extrusion as base plate instead of the 160x40 extrusion.
+    Only a few parts have changed. There are some images in the image folder and those new parts are highlighted orange.
+    
+    
+# Parts that have changed
+
+    * The motor bracket for the geared Nema17 Z axis stepper
+    * The Z axis idler pulley bracket
+    * The tool guide holder
+    + The centering adapters used to center the 2040 extrusion onto the bigger 4040 Z axis backbone
+    * The aluminum extrusions

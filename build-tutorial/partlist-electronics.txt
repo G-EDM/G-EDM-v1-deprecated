@@ -1,0 +1,365 @@
+
+
+# Requirements
+
+Don't bother with 30W soldering irons. The board uses power and gnd planes without thermal reliefs. The connections between the legs and the planes are fully filled and the heat applied will spread rapidly across the planes. A 30W soldering iron will not be able to keep up with this. It can be done somehow but I don't recommend it.
+
+
+I use this soldering iron with the ~3mm single flat tip at full power and it works well. The small tips again won't do it for connections to the gnd plane:
+
+https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09DSDBC7G
+
+
+
+# Tools and useful parts
+
+
+* Tools
+
+    - 1x A cheap Multimeter
+    https://www.amazon.com/Neiko-40508-Digital-Multimeter/dp/B00066ZZO4
+	- 1x 60W soldering Iron
+	https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09DSDBC7G
+	- 1x solder wire
+	- 1x set shrinking tube
+	- 1x set wire end ferrules with crimp tool
+	https://www.amazon.com/WEKESIGO-Crimping-Self-adjustable-Terminals-Connectors/dp/B0B39BLVSH
+
+
+# Parts needed for spark generator
+
+
+* Case
+
+    - Metal case; I use a 19" 3U ( 440 x 290 x 132 mm ) rack mount server case
+    It needs to be metal to shield the EMI noise and offer enough room to add one or two fans for good ventilation.
+
+
+* Power supplies
+
+    - 1x 65V 12.3A 800W LED Switch Power Supply
+    https://www.amazon.com/NVVV-Transformer-Security-Printer-Computer/dp/B09L4JBKPV
+
+
+    - DPM-8605 60V 5A step down module ( to control voltage and amps of the PSU )
+    https://www.amazon.com/DPM-8605-485-Programmable-Communication-Step-Down-Converter/dp/B0BC8PHF2Z
+
+    - 12V 10A PSU ( to provide the power for the steppers and the pulseboard )
+    https://www.amazon.com/LEDMO-Switching-Converter-Adapter-Transformer/dp/B01E6RMASC
+
+    - A power plug with 3 Wires ( Hot/Neutral/Ground )
+    Choose the biggest wire possible. 14 AWG should be fine for this build. If possible 12 AWG.
+    It will deliver power to both PSUs. The 12v and the 65v. The DPM limits the 65V PSU to 5Amps. The steppers run at about 1.5A each depending on the microsteps. 
+
+    - 2 banana jacks ( one red one black )
+    Not all of them are isolated. If they're not isolated they cannot be mounted directly onto the metal case and need a printed mounting plate as isolation from the box.
+    https://www.amazon.com/Banana-Female-Binding-Adapter-Connectors/dp/B07C7WG23G
+
+    - Aligator clips with banana plugs on one side; 15A
+    https://www.amazon.com/Banana-Crocodile-Alligator-Probe-1000V/dp/B083DN3RQL
+
+
+* Misc
+
+    - 4x bass hex standoffs ( to mount the raw DPM8605 PCB; can be 5-20mm )
+    - 4x brass hex standoffs ( Lenght depends on the size of the heatsink )
+    https://www.amazon.com/XLX-Male-Female-Female-Female-Assortment-Stainless/dp/B07ZSYDGR6
+
+
+# Parts needed for the control panel
+
+
+* Display
+
+    - 1x ILI9341 Touch 2.4" 240x320 ( There are many different version. Some are large in size even if the display is 2.4" and some don't have touch)
+    https://www.amazon.com/HiLetgo-Display-ILI9341-Touch-240x320/dp/B07WNLNRDN
+
+
+* Wires
+
+    - A set jumper wires 20cm female-to-female ( To connect the display to the PCB )
+    - A set jumper wires 20cm male-to-female ( To connect the switches, vSense, PWM )
+    - AWG21 or 0.75mm wire ( to connect the stepper motors to the terminals )
+    - AWG16 or 1.5mm ( to connect the 12v motor power from the spark generator to the control panel )
+
+
+ + Connectors
+
+    - 7x 4-Pin GX16 aviation sockets and plugs
+
+    Best to buy a pack of 10 or two packs of 5:
+    https://www.amazon.com/Yowming-Aviation-Thread-Female-Connector/dp/B07HT76HG6
+
+    - 1x Set DC connectors and sockets ( used for the limit switches )
+    https://www.amazon.com/Socket-Threaded-Connector-Adapter-Dustproof/dp/B08SJM2G52
+
+    - Some 2 port WAGO connectors
+    https://www.amazon.com/WAGO-221-412-Lever-Nuts-2-Conductor-Connectors/dp/B07W4RQ6R6
+
+    - Some 5 port WAGO connectors 
+    https://www.amazon.com/WAGO-221-415-Lever-Nuts-5-Conductor-Connectors/dp/B07W7W9J96
+
+
+* Switch
+
+    - !x On/Off rocker switch ( Used to start/stop the EDM process )
+    https://www.amazon.com/TWTADE-Solder-Rocker-Switch-KCD1-X-F/dp/B07XD8J2PL
+
+
+* Misc
+
+    - 4x 10mm brass hex standoffs
+    https://www.amazon.com/XLX-Male-Female-Female-Female-Assortment-Stainless/dp/B07ZSYDGR6
+
+
+
+
+##########################################################################################
+##
+## Note: There are two version of the pulseboard available. They both work different
+## The small one has the mosfets separated and uses a DIP8 gate driver to switch them
+## The big version uses a discrete push/pull gate driver circuit based on bjt power transistors
+## and supports up to 6 mosfets integrated on the PCB. It also has some indicator LEDs.
+## The total costs of the parts are nearly the same except for the PCBs itself. The big PCB is roughly double the price due to double the size
+## I think the big one is easier to build and the LEDs just look cool.
+##
+##########################################################################################
+
+
+###############################################################
+##
+## Parts needed for the small pulseboard with external mosfets
+##
+###############################################################
+
+
+* Gate driver
+
+    - 1x MCP14E9-E/P 3,0A Dual-MOSFET-Driver, 2 x iverted, DIP-8
+
+
+* Resistors
+
+    - 1x 1k 1W ( used as current limiting resistor for the vSense feedback )
+    - 1x 4.7K 1W
+    - 1x 10k 
+    - 1x 560R 5W 
+    - 1x R470 1W
+    - 1x R220 1W ( current limiting resistor to protect the ESP PWM Pin )
+
+
+* Capacitors
+
+    - 1x 100uF >100V photo flash capacitor ( a normal low ESR capcitor should work too )
+    - 2x 47uf 63v low ESR capacitors ( more capacitance and lower voltage rating would be better. Something like: 680uf 25v would be good. Max 8mm diameter )
+    - 3x 100pF (or larger) 500V ceramic disc capacitors 5mm grid; ( CT81 high voltage ceramic capacitor is what I use. It needs to be >100v and < 0.1uF )
+    - 3x 100nf 50V ceramic disc capacitors 5mm grid;
+    https://www.amazon.com/BOJACK-Capacitor-Multilayer-Monolithic-Assortment/dp/B085RLXXBK
+
+
+* Diodes
+
+    - 1x 1N5352B 15V 5W Zehner diode for gate protection ( 15v is good but 18v may be a better choice )
+
+
+* Optocoupler
+
+    - 1x 6N136 Optocoupler ( Note: This board doesn't use the 6N137 optocoupler like the big pulseboard does )
+
+
+* Terminals
+
+    - 3x 2 pole screw terminals; 5mm grid ( 12v supply power, PWM in and vSense in/out )
+    https://www.amazon.com/DAOKI-Sockets-2-54MM-Adapter-Solder/dp/B07YKGJ6QG
+    
+    - 2x 2 pole terminal; 10mm grid ( spark in/out and spark power in/out; 3 pole 5mm grid terminals work too if the center pin is clipped off )
+    https://www.amazon.com/uxcell-Pluggable-2-Position-Mounting-Connector/dp/B00NWE2N9M
+
+    - 1x 3 pole terminal; 10mm grid ( to connect the mosfet; a 5 pole 5mm grid terminal will work too if every second pin is clipped off )
+    https://www.amazon.com/Heyiarbeit-Terminal-Tinning-Connector-MG55C-10-0/dp/B08ZXBPW5S/
+
+
+* Dip sockets
+
+    - 2x DIP8 socket ( to easily plug in the optocoupler and the gate driver )
+
+
+* Poti
+
+    - 1x 10k Ohm 3296 Trim Pot 
+    https://www.amazon.com/uxcell-Through-Hole-Trimmer-Potentiometer/dp/B008LT4IGY
+
+
+
+
+###############################################################
+##
+## Parts needed for the big pulseboard with integrated mosfets
+##
+###############################################################
+
++ BJT Transistors
+
+    - 1x PNP 2SB688 BJT power transistor
+    - 2x NPN 2SD718 BJT power transistor
+    This set will do:
+    https://www.amazon.com/2SB688-Bipolar-Junction-Transistor-Assortment/dp/B08LVGMNB4
+
+
+* Mosfets
+
+    - 6x IRFP260N or similar Mosfet in TO-247AC package ( the board can take 6 of them. But it is not needed to use all six. )
+    https://www.amazon.com/Bridgold-IRFP260NPBF-IRFP260N-IRFP260-Transistor/dp/B07R49H4HZ
+    - 6x TO-247 insulation sheets and shoulder washers to prevent the screw from touching the mosfet cases drain
+    https://www.amazon.com/Electronics-Salon-Silicon-Insulator-Bushing-Assortment/dp/B017AS9DM0
+
+
+* Heatsink
+
+    - 1x Heatsink that covers all 6 mosfets. 140mm lenght would be perfect but couldn't find any. 130mm could work too but it would make the outer mosfets sitting on the total edges of the heatsink. Don't like it.
+    https://www.amazon.com/LuoQiuFa-Aluminium-Heatsink-Radiator-Computer/dp/B0B1CDPJDT 
+
+    ( I haven't mounted any heatsink at the moment. Need to get one first too. For short testing with 1A this is ok but only for short testings. The mosfets get hot very fast and and at some point: Problem. )
+
+
+* Optocoupler
+
+    - 1x 6N137 Optocoupler
+
+
+* Dip sockets
+
+    - 1x DIP8 socket ( to easily plug in the optocoupler )
+    https://www.amazon.com/DAOKI-Sockets-2-54MM-Adapter-Solder/dp/B07YKGJ6QG
+
+
+* LEDs
+
+    - 1x 3mm LED blue 3.2v ( Used as power indicator )
+    https://www.amazon.com/GFORTUN-Emitting-Diffused-Electronic-Indicator/dp/B08D3T25H5
+
+    - 1x 3mm LED green ( low current LED! Used as PWM indicator. Optional. )
+    https://www.amazon.com/Kingbright-Led-Green-2Mcd-568Nm/dp/B08X1HXHXG
+
+
+* Diodes
+
+    - 6x SB 140 DIO Schottkydiode, 40 V, 1 A, DO-15 ( fast turn-off diodes for the mosfet gates )
+
+
+* Resistors
+
+    - 1x R560 5W axial ( length: 17mm; dia: 6mm )
+    - 1x R560 2W
+    - 6x R4.7 2W ( Used as gate resistor. This value could change to 10Ohm 2W later. Maybe. )
+    - 6x 100kOhm 1W ( Used as pulldown for the Mosfet gates )
+    - 1x R220 1W ( used as current limiter for the PWM signal to the optocoupler )
+    - 1x R200 1W ( used as current limiter to the PWM indicator LED. Can be R220 too. )
+    - 2x 4.7kOhm 2W
+    - 1x 1kOhm 1W
+    - 1x R560 1W (used as current limiter for the 12v power indicator LED )
+
+    Not all 1W sets have a R200 resistor. This one has:
+
+    https://www.amazon.com/AUKENIEN-Assortment-Resistors-Compliant-Electrical/dp/B09SZBQWV4
+
+
+* Capacitors
+
+    - 3x 100pF (or larger) 500V ceramic disc capacitors 5mm grid; ( CT81 high voltage ceramic capacitor is what I use. It needs to be >100v and < 0.1uF )
+    - 3x 100nf 50V ceramic disc capacitors 5mm grid;
+    https://www.amazon.com/BOJACK-Capacitor-Multilayer-Monolithic-Assortment/dp/B085RLXXBK
+
+    - 1x 100uF >100V photo flash capacitor
+    - 1x 680uf 25v capacitor 8mm diameter; 5mm grid
+    - 1x 680uf 16v capacitor 8mm diameter; 5mm grid
+    - 1x 1000µF 25V capacitor;
+
+
+* Terminals
+
+    - 3x 2 pole screw terminals; 5mm grid ( 12v supply power, PWM in/out and vSense out )
+    - 2x 2 pole terminal; 10mm grid ( spark in/out and spark power in/out; 3 pole 5mm grid terminals work too if the center pin is clipped off )
+    https://www.amazon.com/uxcell-Pluggable-2-Position-Mounting-Connector/dp/B00NWE2N9M
+
+
+* Poti
+
+    - 1x 10k Ohm 3296 Trim Pot 
+    https://www.amazon.com/uxcell-Through-Hole-Trimmer-Potentiometer/dp/B008LT4IGY
+
+
+
+###############################################################
+##
+## Parts needed for the ESP32 controller PCB
+##
+###############################################################
+
+* External boards
+
+    - 1x ESP32 38Pin WROOM-32 NodeMCU
+    https://www.amazon.com/DORHEA-Development-Microcontroller-NodeMCU-32S-ESP-WROOM-32/dp/B08MQDS6WV
+    - 4x TMC2209 v2.0 ( For the sinker only build 2 of them will do. 1 for Z and 1 for the spindle )
+    Note: Those drivers are originally designed by watterott and called SilentStepStick
+    They shared the design with the opensource community and now a lot of clones are sold on Amazon.
+    If you want to support them for their great drivers buy the original boards:
+    https://github.com/watterott/SilentStepStick
+    https://shop.watterott.com/SilentStepStick-TMC2209-V2
+
+    It is important to use the v2.0 version of those drivers. They have a better chip and a bigger heatsink (14,5 x 15 x 13). They are able to handle more current. And a small warning: They are supper sensitive and can be damaged easily. Never move the stepper by hand while the drivers are connected. The reverse voltage can damage the drivers.
+
+
++ Screw terminals
+
+	- 1x 2 pole terminal 5mm grid ( for 12v power )
+	- 4x 4 pole terminal 5mm grid ( to connect the steppers. One for each axis )
+
+* Pin sockets
+
+	- 2x 1x19 Pin Sockets ( to plug in the ESP32 )
+	- 8x 1x8  Pin Sockets ( to plug in the TMC2209 drivers )
+
+    These sets will work. They don't have the exact pin number needed but it is possible to cut them to size:
+    https://www.amazon.com/Glarks-Straight-Connector-Assortment-Prototype/dp/B076GZXW3Z
+
+
+* Pin headers
+
+	- 1x 1x11 Pin Header
+	- 6x 1x2  Pin Header
+	- 1x 2x2  Pin Header ( this one is a two row header 2x2 pins. It is possible to use 2 1x2 headers too )
+
+    These will work for the single row pin headers and can be cut to size:
+    https://www.amazon.com/HiLetgo-20pcs-2-54mm-Single-Header/dp/B07R5QDL8D
+
+
+    Note: In the example images there where pin sockets used instead of pin headers. It works too but is not recommended. The jumper wire pins won't hold very tight in these sockets.
+
+
+* Capacitors
+
+	- 1x 680uf 25v capacitor 8mm diameter; 5mm grid
+	- 1x 680uf 16v capacitor 8mm diameter; 5mm grid
+	- 1x 47uf 63v capacitor <= 8mm diameter; 5mm grid; ( this one can be 16v too. I had them and used them. )
+	- 3x 100nF 50v ceramic disc capacitor
+
+
+* Resistors
+
+	- 2x 1k   1/2W resistor
+	- 2x 100k 1/2W resistor ( Buy 3 of them. Maybe one is used later for the vSense input pin )
+	( The build images show larger resistors but they are heavily oversized )
+
+
+* Dip switch
+
+	- 1x 4 pole dip switch ( to set the microsteps for XY and A )
+
+	https://www.amazon.com/Comidox-Position-Switch-Module-Terminals/dp/B07LBMC9HV
+
+
+* Diode
+
+    - 1x 1N4001 diode or similar. ( For the 12v Fan output. Not tested yet. )
+

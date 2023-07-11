@@ -1,0 +1,9 @@
+Both pulseboards are wired the same way. 
+
+PWM IN/GND
+VSense OUT (GND not connected)
+30-60V Spark Power
+Spark out +-
+12v +-
+
+The 12v to the pulseboard should be connected directly to the PSU terminal.

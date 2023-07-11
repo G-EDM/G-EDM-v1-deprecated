@@ -1,0 +1,12 @@
+# Important
+
+    Only one GND wire is connected from the ESP32 motion controller to the pulseboard. 
+    It doesn't matter if the PWM ( IN / GND ) is used or the vSense GND.
+    If both GND wires are connected to the pulseboard it creates a ground loop that produces
+    a large amount of EM noise that renders the feedback useless and the machine won't work.
+    
+    
+    
+    I wired the PWM OUT to the pulseboards PWM IN and PWM GND to the pulseboard PWM GND.
+    The vSense IN to the pulseboard vSense OUT. The vSense GND is unconnected on both boards!
+

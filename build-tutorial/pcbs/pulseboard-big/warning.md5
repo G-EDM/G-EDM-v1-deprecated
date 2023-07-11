@@ -1,0 +1,13 @@
+# WARNING
+
+Before connecting the ESP32 to the pulseboard the feedback needs to be set or else the ESP32 will be damaged!
+
+The feedback voltage is adjusted with the 10kOhm trimmer poti. A multimeter is needed to measure the voltage.
+
+Set the spark input voltage to 60v and rotate the trimmerpoti until the voltage at the vSense feedback screw terminal is 2.8v
+
+If you want to use cutting voltages above 100v you can adjust the trimmer poti to fit it. 2.8v should always be the maximum feedback voltage. Voltages above 3.3v will damage the ESP32 and the ADC reading can only work reliable with voltages up to 2.8v. 
+
+I recommend to use a maximum spark voltage of 60v. If the feedback voltage is set to 2.8v@60v it will work for 30-60v. 
+
+If it is set to 2.8v@60v never use voltages above 60v. 65v may still work but the feedback voltage increases with the input voltage and at some point it will exceed the max ratings of the ESP and destroy the pin.

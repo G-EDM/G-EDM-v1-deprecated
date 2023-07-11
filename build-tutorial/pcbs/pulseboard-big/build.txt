@@ -1,0 +1,68 @@
+ 
+ # Transistors
+ 
+ Q8      = PNP 2SB688 BJT power transistor 
+ Q7, Q10 = NPN 2SD718 BJT power transistor
+ 
+ # Mosfets
+ 
+ Q1, Q2, Q3, Q4, Q5, Q6 = IRFP260N Mosfet ( mounted on the bottom side with the blank drain metal to the heatsink )
+ 
+ # Optocoupler
+ 
+ U1 = DIP8 Socket with 6n137 ( I recommend to not solder the optocoupler directly to the PCB and use a DIP8 socket instead )
+ 
+ # LEDs ( optional )
+ 
+ D16 = Low current LED green 
+ D15 = LED blue
+ 
+ # Ceramic disc capacitors
+ 
+ C1, C10, C23 = 100nf 50V ceramic capacitors
+ C9, C11, C14 = 100pF >100v ceramic capacitors
+ 
+ # Capacitors
+ 
+ C4  = 100uF >100V photo flash or low ESR capacitor
+ C19 = 1000µF 25V capacitor
+ C2  = 680uf 16v capacitor
+ c12 = 680uf 25v capacitor
+ 
+ # Bridges ( I clipped of two legs from a 5W resistor and bend them into a U shape. See the images for details )
+ 
+ R30, R31 
+ 
+ 
+ # Diodes
+ 
+ D1, D3, D6, D7, D10, D12   = SB 140 DIO Schottkydiode, 40 V, 1 A, DO-15 ( fast turn off diodes for Mosfets )
+ 
+ 
+ # Resistors
+ 
+R8, R9, R14, R15, R19, R22 = 100kOhm 1W ( pulldown resistor for the mosfet gate )
+R6, R7, R12, R13, R18, R21 = R4.7 2W    ( Mosfet gate resistors )
+
+
+R3 = R560 5W axial
+R4 = R560 2W
+
+R1  = R220 1W
+R29 = R200 1W
+R2  = 4.7kOhm 2W
+R33 = 4.7kOhm 2W
+R28 = R560 1W
+R5  = 1kOhm 1W
+
+# Trim Pot
+
+RV1 = 10kOhm 3296 Trim Pot 
+
+
+
+
+
+
+ 
+ 
