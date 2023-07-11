@@ -1,5 +1,9 @@
 Work in progress. This repository only includes the 3D files and some images at the moment!
 
+Added some parts to build a cheaper version:
+    [>>> Entry level G-EDM <<<](https://github.com/G-EDM/G-EDM/tree/main/3D-files/G-EDM-Tower/printed-parts/work-in-progress/entry-level-gedm)
+    
+
 
 # Let there be sparks... ⚡⚡⚡
 
