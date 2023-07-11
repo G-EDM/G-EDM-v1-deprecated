@@ -68,9 +68,9 @@ The old controlpanel has been replaced by a nice looking one with better cable m
 
 <img src="https://abload.de/img/1dlewg.jpg">
 
-<img src="https://github.com/G-EDM/G-EDM/blob/main/images/pcbs/6.jpg">
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/pcbs/ESP32-motion-board/60.jpg">
     
-<img src="https://github.com/G-EDM/G-EDM/blob/main/images/pcbs/1.jpg">
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/pcbs/pulseboard-small/1.jpg">
 
 <img src="https://github.com/G-EDM/G-EDM/blob/main/3D-files/ESP32-Controlbox/final-panel.png">
 
