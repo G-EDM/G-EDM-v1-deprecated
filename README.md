@@ -56,6 +56,7 @@ Added some parts to build a cheaper version:
 # Follow the project on youtube:
 
 [>>> Follow the project on Youtube <<<](https://www.youtube.com/@G-EDM/videos)
+
 [>>> Follow the project on Hackaday <<<](https://hackaday.io/project/190371-g-edm)
 
 
