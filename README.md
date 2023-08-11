@@ -47,6 +47,8 @@ Added some parts to build a cheaper version:
     * A highly customized GRBL fork with XYZA Axis support with SD Card and touch screen support
     * A build tutorial 
     * All 3D files
+    * A customized GRBL post processor for Freecad to create professional GCode
+    * Configuration files for GRBL-Plotter to create simple GCode 
 
     
 
@@ -54,7 +56,7 @@ Added some parts to build a cheaper version:
 # Follow the project on youtube:
 
 [>>> Follow the project on Youtube <<<](https://www.youtube.com/@G-EDM/videos)
-
+[>>> Follow the project on Hackaday <<<](https://hackaday.io/project/190371-g-edm)
 
 
 # The G-EDM
