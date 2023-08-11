@@ -62,6 +62,8 @@ Added some parts to build a cheaper version:
 
 # The G-EDM
 
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/images/random/5.jpg">
+
 <img src="https://abload.de/img/22aqche.png">
 
 This picture is not up-to-date. A lot has changed. The variable 30v bench PSU is not needed anymore and has been replaced by a 12v PSU that is mounted within the spark generator. This build can be used as single axis sinker/drill EDM but also as multiaxis CNC. Both is possible.
