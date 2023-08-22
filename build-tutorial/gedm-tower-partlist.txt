@@ -1,0 +1,252 @@
+#####################################################
+#
+#
+# This list may not be complete and with all the changes done so far
+# it is possible that some of the small parts are not needed anymore
+#
+#
+#####################################################
+
+
+#####################################################
+####
+#### Parts for the shielded spark generator
+####
+#####################################################
+
+Shielded enclosure:
+
+  1x 19" 3U rack mount case 300mm deep ( plenty of room for everything )
+
+  ( You can use a big scooby doo metal lunchbox to archive the needed RF/EMI shielding too. Whatever floats your boat )
+
+
+
+Main PSU:
+
+  1x 65V 12.3A 800W LED Switch Power Supply Driver AC 110/220V to DC 65V Transformer for LED Strip CCTV Security System,Camera,3D Printer,Computer Project,Motor
+
+
+
+Motor PSU ( powers the steppers, the pump, the spindle motor and the mosfet gate driver ):
+  
+  1x AC 110V/220V to DC 12V 10A 120W Universal Regulated Switching Power Supply Adapter Transformer Driver Converter for LED Strip Light, CCTV Security Camera System, Computer Project 
+  
+
+
+
+Step down converter to control voltage and current:
+
+  /** 
+    *
+    * If money is no issue I recommend the bigger one. 
+    * I use the small one that can deliver a maximum of 5A which I'm happy with
+    *
+    **/
+
+  Programmable DC Numerical Control Power Supply
+  1x DPM8605; 0 - 60v; 0 - 5A; 300W
+
+  or
+  
+  /** that is a lot of power and it is easy to burn the mosfets with this **/
+  1x DPM8624 0 - 60 V 0 mA - 24 A 1400 W 
+
+
+
+Ventilation:
+
+  1x 12v 120mm Fan
+
+
+Connectors:
+
+  1x 4mm banana plug sockets; 1x red and 1x black;
+  1x 4mm banana plugs; 1x red and 1x black;
+  1x GX16 aviation socket; 4 pin;
+  2x GX16 aviation plug; 4 pin;
+
+
+Some WAGO terminals
+
+Some M3, M4, M5, M6, M8 screws, nuts and T-slot nuts and a set of setscrews.
+
+
+
+
+#####################################################
+####
+#### Other Parts
+####
+#####################################################
+
+
+  1x 12V Geared DC Motor 200rpm or Nema17 stepper ( used for electrode rotation )
+  1x 12v Peristaltic Pump 3mm x 5mm silicone tubing. 150ml/min 
+  1x 3mm x 5mm silicone tube; 2 meters;
+  The diameter of the silicone tube is important if it is used with the round bar drill jig. 150ml/min seems to work "ok".
+
+
+
+1x Touch display 320x240 ILI9341 2.4" 
+
+      There are different models available. It is important to choose the correct one. Some have larger PCBs.
+      This display is available without tuch too. Touch is needed!
+    
+    HiLetgo 2.4" SPI TFT LCD Display 2.4 Inch ILI9341 Touch Panel LCD ILI9341 240x320 5V 3.3V
+
+
+
+6x DC Power Sockets and plugs 
+
+    5.5 x 2.1 mm DC Power Jack Socket Threaded Female Panel Mount Connector Adapter 
+    with Dustproof Plug 6Pack 
+
+
+
+1x On/Off rocker switch. 2poles. For 13mm*19mm pocket. ( A 5 Pack is good to have )
+
+    On/Off Boat Rocker Switch 5Pcs 2 Pin Position Snap 12V 110V 250V QTEATAK 
+
+
+
+3x Micro limit switch ( A pack of 25 is good to have. They are cheap )
+
+    Cylewet 25Pcs AC 1A 125V 3Pin SPDT Limit Micro Switch Long Hinge Lever for Arduino (Pack of 25)
+
+
+
+7x Aviation Connector Plugs and sockets GX16 4PINs ( They are available with 2,3,4,5 Pins. We need the 4 Pin version )
+
+    Aviation Connector Plugs, Lsgoodcare 30Pcs 16MM 4 Pin Din Female/Male Aviation Wire Connector Plug, AC 200V 5A GX16-4 Pin Metal Chassis Thread Panel Connector Socket 
+
+
+
+2x Banana sockets and plugs. One red and one black ones for 8mm hole.
+
+    10Pcs Black and Red 4mm Banana Jack Socket Female Adapter Panel Mount Binding Post for 4mm Banana Plug Connectors 
+
+
+
+2x 4mm Banana plugs. One red and one black. 
+
+
+
+A big set jumper wires. 10cm and 20cm. Male to male and male to female for both sizes.
+
+
+
+4x Standoff Male/Female 10mm 
+4x Standoff Male/Female 20mm
+4x Standoff Male/Female 30mm 
+4x M3 Nut
+4x M3x6 Screw
+
+    Csdtylh 320Pcs M3 Motherboard Standoffs&Screws&Nuts Kit, Hex Male-Female Brass Spacer Standoffs, Laptop Screws for DIY Computer Build, Electronic Projects, Raspberry Pi, Circuit Board etc.
+
+
+
+## To mount the limit switches ##
+
+4x Screws M5x8
+4x T-Nut M5 Slot6 
+4x M2x12 Screws
+4x M2 Nut
+
+
+
+
+#####################################################
+####
+#### Mechanical Parts
+####
+#####################################################
+
+PLA+ and a little TPU for a small belt.
+
+
+My drill chuck is a big ballbearing with a 12mm OD 10mm ID steel tube pressed into the bearing and a small dremel like chuck with 10mm OD pressed into the tube.
+The ball bearing has 12mm ID and 32mm OD. 10mm height. It is pressed into the tool head. A little glue would be good but I just pressed it in.
+
+
+
+4x 684ZZ Ball bearings for the printed idler pulley
+2m GT2 Timing belt. 6mm width. Use a set that comes with the aluminum clamp mount block/bar that is needed.
+
+Aluminum extrusions:
+
+Base plate:
+160x40 Slot 8; 400mm length; Heavy or Eco variant; M8 Thread on one side in the two center holes;
+
+Z axis:
+1x 120x80 Slot 8mm; 750mm length; Heavy or Eco variant;
+1x 20x40 Slot 6mm; 400mm - 600mm length; For more worktravel use 600mm;
+
+Linear rails:
+
+Z-Axis:
+HGR15 with 1 slliding block, Same length as the small extrusion; 400mm -600mm;
+
+
+Mounting parts:
+
+The big Z Beam rests on the base plate and is connected with two angle brackets and a aluminum plate at the back.
+
+2x 40x40 90° brackets for Slot 8 profiles
+1x 150x80x10 Aluminum plate
+
+Some T-Nuts for Slot 8 and 6 slots:
+
+20x Slot-8 M8
+20x Slot-6 M6
+Slot-6 M3 (number depends on the length of the linear rail)
+
+
+
+A package of setscrews and a box of different hex screws. M2, M3, M4. Also some M6 and M8 Screws are needed.
+T Slots Nuts for M6, M8, M4. I don't use the small ones. Only the heavy squaretype ones.
+
+
+M8 and M6 screws. Don't know the exact size
+M8
+4x M8x18 
+6x M8x25
+6x M8x30
+M6
+12x M6x15
+
+M3
+M3x8 ( number of screws depends on the linear rail length you choose )
+
+ 
+Stepper:
+
+Z-Axis:
+Nema 17; 0.4Nm; 1.68A; 1.8° Step angle; 5mm shaft; Rated 2.8v (This is important! No 12v or 24v rated steppers. The steppers shares the PSU with other stuff that can't handle more than 12v.)
+Nema 17 planetary gearbox; 19.2:1; 8mm shaft; ( if you can't get the exact 19,2:1 gear ratio you can use 19:1 or similar; This can be adjusted in the software)
+https://www.reichelt.de/schrittmotor-hoch-drehmoment-hybrid-2-phasen-nema17-01-p219027.html?&trstct=pos_0&nbc=1
+
+
+
+For the strong roundbar drill jig an aluminum tube is needed with 40mm OD and 32mm ID. Currently only supports 12mm round bars.
+
+
+This list may not be complete. Some screws and maybe other parts needed could be missing here. 
+
+
+
+
+# XY Axis
+
+2x Nema 17; 0.4Nm; 1.68A; 1.8° Step angle; 5mm shaft; Rated 2.8v
+
+    https://www.reichelt.de/schrittmotor-hoch-drehmoment-hybrid-2-phasen-nema17-01-p219027.html?&trstct=pos_0&nbc=1
+
+
+* Linear rails
+    * 1x HGR20 500mm + SFU1605 Ballscrew 450mm ( ~80.- )
+    * 1x HGR20 300mm + SFU1605 Ballscrew 250mm ( ~80.- )
+
+* Aluminum
+    * 1x 150mm x 530mm x 15mm ( ~70.- )
+    * 1x 150mm x 260mm x 15mm ( ~40.- )
