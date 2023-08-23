@@ -67,7 +67,7 @@ Added all 3D models to build the XY conversion
 
 # Donations
 
-    * Developement is not always as fast as it could if you're poor. You want to donate something? 
+    * Developement is not always as fast as it could be if you're poor. You want to donate something? 
     * Paypal: paypal.me/gedmdev
     * Bitcoin: bc1q9akp00a5hceh9n3jc9wfttxuwuk9c7da0sqkr8
     * Donations will be used for yoga stress relief sessions with joss sticks, thai massages, medication, therapy and burnout treatment
