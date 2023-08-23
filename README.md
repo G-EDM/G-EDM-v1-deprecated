@@ -73,7 +73,7 @@ Added all 3D models to build the XY conversion
     * Donations will be used for yoga stress relief sessions with joss sticks, thai massages, medication, therapy and burnout treatment
     * Some of your donations will be directed to the GRBL core developer team to support their great work. They may be happy about some yoga sessions too.
     
-<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/artwork/donations/donate.jpg">
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/artwork/donations/donate.png">
 
 
 
