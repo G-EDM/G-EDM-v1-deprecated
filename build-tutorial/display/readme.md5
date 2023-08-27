@@ -2,9 +2,14 @@ There are many displays available that look all the same but are different.
 
 The display needs to be 320x240 2.4" with SD-Card and Touch.
 
-Some use SPI for the display and others don't. We use SPI.
+Some use SPI for the display and others use an 8Bit parallel bus. The GEDM needs the SPI version!
 
-Look at the image to see how the back of the display should look like. The "Touch Screen Display Shield Module " won't work for example. It doesn't use the SPI bus for the TFT.
+Look at the image to see how the back of the display should look like. The "Touch Screen Display Shield Module" won't work for example. It doesn't use the SPI bus for the TFT.
 
 Search Amazon for:
 HiLetgo 2.4" SPI TFT LCD Display 2.4 Inch ILI9341 Touch Panel LCD ILI9341 240x320 5V 3.3V 
+
+
+### WARNING ###
+This one does not work:
+HiLetgo 2.4" ILI9341 240X320 TFT LCD Display with Touch Panel LCD for Arduino UNO MEGA2560 

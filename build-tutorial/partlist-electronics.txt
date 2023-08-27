@@ -71,8 +71,12 @@ https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09
 
 * Display
 
-    - 1x ILI9341 Touch 2.4" 240x320 ( There are many different version. Some are large in size even if the display is 2.4" and some don't have touch)
+    - 1x ILI9341 SPI Touch 2.4" 240x320 ( There are many different version. Some are larger in size even if the display is 2.4" and some don't have touch and some others use an 8Bit parallel bus instead of SPI. The GEDM needs the SPI version!)
     https://www.amazon.com/HiLetgo-Display-ILI9341-Touch-240x320/dp/B07WNLNRDN
+    
+    ### WARNING ###
+    This one does not work. It uses an 8Bit parallel bus and we need SPI:
+       HiLetgo 2.4" ILI9341 240X320 TFT LCD Display with Touch Panel LCD for Arduino UNO MEGA2560 
 
 
 * Wires
