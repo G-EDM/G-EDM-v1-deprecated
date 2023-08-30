@@ -47,7 +47,7 @@
                   They need an external 100k pulldown resistor. One leg to the pin and one to GND.
                   They also need a small cermaic capacitor to smoothen out the noise. 0.1uf
                   
-   The spindle stepper use GPIO1 as DIR Pin. This was due to the lack of other output GPIOs.
+   The spindle stepper uses GPIO1 as DIR Pin. This was due to the lack of other output GPIOs.
    This means that any UART needs to be fully disabled. Serial/Uart communication changes the staet of this pin.
    Since it is just a spindle it is possible to clip off the DIR pin on the TMC driver too.
    
