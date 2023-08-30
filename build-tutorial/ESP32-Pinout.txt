@@ -37,7 +37,7 @@
    GPIO39  ---------------> XYZ Limit switch  ( NC/Normally closed; wired in parallel. One wire to 3.3v and the other to GPIO39 )   
    GPIO22  ---------------> PWM  ( PWM for the pulsegenerator ) 
    GPIO34  ---------------> vSense Feedback In    
-   GPIO36  ---------------> ON/OFF Switch ( NC/Normally closed )
+   GPIO36  ---------------> ON/OFF Switch ( NC/Normally closed; One wire to 3.3v and the other to GPIO36 )
    
    
    
@@ -56,6 +56,12 @@
    
    Also I haven't tested the GPIO1 as DIR pin yet since debugging the code needs massive communication and 
    I just don't have the time to remove all the debug stuff. I clipped off the DIR leg. :D
+   
+   The Pulsboard PWM GND/OUT is connected to the ESP GND Pin too. It is a shared GND between Pulseboard and Motionboard. There are in total three 
+   wires connected between ESP and Pulsboard: 
+       ESP PWM Out to Pulseboard PWM In
+       ESP vSenseIn to Pulseboard vSense In
+       ESP GND to pulseboard GND.
    
    
    
