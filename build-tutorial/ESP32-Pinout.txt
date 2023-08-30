@@ -1,0 +1,69 @@
+#######################################################
+#
+# GEDM ESP Pinout
+# ESP32 WROOM 32 with 38 Pins
+#
+#######################################################
+
+   ### ILI9341 2.4" SPI TFT with Touch and SD card ###
+   
+   GPIO2  ---------------> CS
+   GPIO4  ---------------> RESET 
+   GPIO5  ---------------> SD_CS   
+   GPIO15 ---------------> DC   
+   GPIO18 ---------------> T_CLK  SCK,       SD_SCK
+   GPIO19 ---------------> T_DO,  SDO<MISO>, SD_MISO
+   GPIO21 ---------------> T_CS
+   GPIO23 ---------------> T_DIN, SDI<MOSI>, SD_MOSI   
+   3.3v   ---------------> LED, VCC
+   GND    ---------------> GND
+   
+   ### TMC2209 Stepper drivers ###
+   
+   GPIO1   ---------------> DIR  ( Spindle stepper / A )   
+   GPIO12  ---------------> STEP ( Spindle stepper / A )
+   GPIO27  ---------------> STEP ( X )
+   GPIO26  ---------------> DIR  ( X )   
+   GPIO13  ---------------> STEP ( Y )
+   GPIO14  ---------------> DIR  ( Y )   
+   GPIO25  ---------------> STEP ( Z )
+   GPIO33  ---------------> DIR  ( Z )   
+   GPIO17  ---------------> MS1  ( Z )
+   GPIO16  ---------------> MS2  ( Z ) 
+   GPIO32  ---------------> ENA  ( Stepper enable pin shared by all steppers )   
+   
+   ### Others ### 
+   
+   GPIO39  ---------------> XYZ Limit switch  ( NC/Normally closes wired in parallel. One wire to 3.3v and the other to GPIO39 )   
+   GPIO22  ---------------> PWM  ( PWM for the pulsegenerator ) 
+   GPIO34  ---------------> vSense Feedback In    
+   GPIO36  ---------------> ON/OFF Switch ( NC/normally closed )
+   
+   
+   
+   ### Notes ###
+   GPIO36, GPIO39 (on/off and limit switch pins) are input only pins without internal pulldown features. 
+                  They need an external 100k pulldown resistor. One leg to the pin and one to GND.
+                  They also need a small cermaic capacitor to smoothen out the noise. 0.1uf
+                  
+   The spindle stepper use GPIO1 as DIR Pin. This was due to the lack of other output GPIOs.
+   This means that any UART needs to be fully disabled. Serial/Uart communication changes the staet of this pin.
+   Since it is just a spindle it is possible to clip off the DIR pin on the TMC driver too.
+   
+   In the future this may change. For example MS1 and MS2 for Z is not really used anymore. Those two Pins would allow some more flexibility.
+   Using fixed microsteps may be the best way.
+   
+   Also I haven't tested the GPIO1 as DIR pin yet since debugging the code needs massive communication and 
+   I just don't have the time to remove all the debug stuff. I clipped off the DIR leg. :D
+   
+   
+   
+     
+
+
+
+
+
+
+
+
