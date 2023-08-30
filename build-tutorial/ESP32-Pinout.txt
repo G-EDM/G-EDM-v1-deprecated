@@ -34,7 +34,7 @@
    
    ### Others ### 
    
-   GPIO39  ---------------> XYZ Limit switch  ( NC/Normally closes wired in parallel. One wire to 3.3v and the other to GPIO39 )   
+   GPIO39  ---------------> XYZ Limit switch  ( NC/Normally closed; wired in parallel. One wire to 3.3v and the other to GPIO39 )   
    GPIO22  ---------------> PWM  ( PWM for the pulsegenerator ) 
    GPIO34  ---------------> vSense Feedback In    
    GPIO36  ---------------> ON/OFF Switch ( NC/normally closed )
