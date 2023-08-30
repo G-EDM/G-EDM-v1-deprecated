@@ -57,10 +57,12 @@
    Also I haven't tested the GPIO1 as DIR pin yet since debugging the code needs massive communication and 
    I just don't have the time to remove all the debug stuff. I clipped off the DIR leg. :D
    
-   The Pulsboard PWM GND/OUT is connected to the ESP GND Pin too. It is a shared GND between Pulseboard and Motionboard. There are in total three 
-   wires connected between ESP and Pulsboard: 
+   The Pulsboard PWM GND/OUT is connected to the ESP GND Pin too. It is a shared GND between Pulseboard and Motionboard. 
+   
+   There are in total three  wires connected between ESP and Pulsboard: 
+   
        ESP PWM Out to Pulseboard PWM In
-       ESP vSenseIn to Pulseboard vSense In
+       ESP vSenseIn to Pulseboard vSense Out
        ESP GND to pulseboard GND.
    
    
