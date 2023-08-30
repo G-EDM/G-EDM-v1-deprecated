@@ -45,7 +45,7 @@
    
    GPIO36, GPIO39 (on/off and limit switch pins) are input only pins without internal pulldown features. 
                   They need an external 100k pulldown resistor. One leg to the pin and one to GND.
-                  They also need a small cermaic capacitor to smoothen out the noise. 0.1uf
+                  They also need a small ceramic capacitor to smoothen out the noise. 0.1uf
                   
    The spindle stepper uses GPIO1 as DIR Pin. This was due to the lack of other output GPIOs.
    This means that any UART needs to be fully disabled. Serial/Uart communication changes the staet of this pin.
