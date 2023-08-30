@@ -48,7 +48,7 @@
                   They also need a small ceramic capacitor to smoothen out the noise. 0.1uf
                   
    The spindle stepper uses GPIO1 as DIR Pin. This was due to the lack of other output GPIOs.
-   This means that any UART needs to be fully disabled. Serial/Uart communication changes the staet of this pin.
+   This means that any UART needs to be fully disabled. Serial/Uart communication changes the state of this pin.
    Since it is just a spindle it is possible to clip off the DIR pin on the TMC driver too.
    
    In the future this may change. For example MS1 and MS2 for Z is not really used anymore. Those two Pins would allow some more flexibility.
