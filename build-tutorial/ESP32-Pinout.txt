@@ -37,11 +37,12 @@
    GPIO39  ---------------> XYZ Limit switch  ( NC/Normally closed; wired in parallel. One wire to 3.3v and the other to GPIO39 )   
    GPIO22  ---------------> PWM  ( PWM for the pulsegenerator ) 
    GPIO34  ---------------> vSense Feedback In    
-   GPIO36  ---------------> ON/OFF Switch ( NC/normally closed )
+   GPIO36  ---------------> ON/OFF Switch ( NC/Normally closed )
    
    
    
    ### Notes ###
+   
    GPIO36, GPIO39 (on/off and limit switch pins) are input only pins without internal pulldown features. 
                   They need an external 100k pulldown resistor. One leg to the pin and one to GND.
                   They also need a small cermaic capacitor to smoothen out the noise. 0.1uf
