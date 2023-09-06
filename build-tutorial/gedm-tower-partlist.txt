@@ -169,7 +169,7 @@ My drill chuck is a big ballbearing with a 12mm OD 10mm ID steel tube pressed in
 The ball bearing has 12mm ID and 32mm OD. 10mm height. It is pressed into the tool head. A little glue would be good but I just pressed it in.
 
 
-
+2x 6201Z 12x32x10mm bearing ( one is pressed into the top lid and one into the main tool head )
 4x 684ZZ Ball bearings for the printed idler pulley
 2m GT2 Timing belt. 6mm width. Use a set that comes with the aluminum clamp mount block/bar that is needed.
 
@@ -185,7 +185,7 @@ Z axis:
 Linear rails:
 
 Z-Axis:
-HGR15 with 1 slliding block, Same length as the small extrusion; 400mm -600mm;
+HGR15 with 1x HGH15CA sliding block, Same length as the small extrusion; 400mm -600mm; 
 
 
 Mounting parts:
@@ -250,3 +250,18 @@ This list may not be complete. Some screws and maybe other parts needed could be
 * Aluminum
     * 1x 150mm x 530mm x 15mm ( ~70.- )
     * 1x 150mm x 260mm x 15mm ( ~40.- )
+    
+    
+    
+    
+#####################################################
+####
+#### Wire EDM extension
+####
+#####################################################
+
+Bearings:
+
+MR63ZZ 3x6x2.5mm
+V623ZZ 3x12x4mm bearings
+684ZZ  4x9x4 bearing
