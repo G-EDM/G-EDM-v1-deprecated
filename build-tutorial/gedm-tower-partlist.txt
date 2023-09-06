@@ -244,8 +244,8 @@ This list may not be complete. Some screws and maybe other parts needed could be
 
 
 * Linear rails
-    * 1x HGR20 500mm + SFU1605 Ballscrew 450mm ( ~80.- )
-    * 1x HGR20 300mm + SFU1605 Ballscrew 250mm ( ~80.- )
+    * 1x HGR20 500mm + 2x HGH20CA linear block + SFU1605 Ballscrew 450mm ( ~80.- )
+    * 1x HGR20 300mm + 2x HGH20CA linear block + SFU1605 Ballscrew 250mm ( ~80.- )
 
 * Aluminum
     * 1x 150mm x 530mm x 15mm ( ~70.- )
