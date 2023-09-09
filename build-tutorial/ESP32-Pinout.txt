@@ -11,11 +11,18 @@
    GPIO4  ---------------> RESET 
    GPIO5  ---------------> SD_CS   
    GPIO15 ---------------> DC   
-   GPIO18 ---------------> T_CLK  SCK,       SD_SCK
-   GPIO19 ---------------> T_DO,  SDO<MISO>, SD_MISO
+   GPIO18 ---------------> T_CLK,
+                           SCK,       
+                           SD_SCK
+   GPIO19 ---------------> T_DO,
+                           SDO<MISO>,
+                           SD_MISO
    GPIO21 ---------------> T_CS
-   GPIO23 ---------------> T_DIN, SDI<MOSI>, SD_MOSI   
-   3.3v   ---------------> LED, VCC
+   GPIO23 ---------------> T_DIN,
+                           SDI<MOSI>
+                           SD_MOSI   
+   3.3v   ---------------> LED, 
+                           VCC
    GND    ---------------> GND
    
    ### TMC2209 Stepper drivers ###
@@ -43,9 +50,20 @@
    
    ### Notes ###
    
+   TFT Display, Touch and SD Card are three different SPI devices that share one SPI bus. MOSI and MISO are data in and data out routes while
+   the device is selected via the chipselect. So each SPI device has an own CS Pin but they all share MOSI, MISO and CLK. 
+   GPIO18, GPIO19 and GPIO23 have three wires connected to each of them. 
+   The motion PCB takes care of it and provides a PIN for each jumper wire. 
+   If the machine is build without the G-EDM motion PCB it is possible to solder some jumper wires together to create a 
+   3x female to 1x female adapter.
+   
+   
+   
    GPIO36, GPIO39 (on/off and limit switch pins) are input only pins without internal pulldown features. 
                   They need an external 100k pulldown resistor. One leg to the pin and one to GND.
                   They also need a small ceramic capacitor to smoothen out the noise. 0.1uf
+                  
+                  
                   
    The spindle stepper uses GPIO1 as DIR Pin. This was due to the lack of other output GPIOs.
    This means that any UART needs to be fully disabled. Serial/Uart communication changes the state of this pin.
@@ -56,6 +74,9 @@
    
    Also I haven't tested the GPIO1 as DIR pin yet since debugging the code needs massive communication and 
    I just don't have the time to remove all the debug stuff. I clipped off the DIR leg. :D
+   
+   
+   
    
    The Pulsboard PWM GND/OUT is connected to the ESP GND Pin too. It is a shared GND between Pulseboard and Motionboard. 
    

@@ -1,0 +1,88 @@
+###########################################################
+#
+# This is just one way to create a 2D GCode
+# It may not be the best or correct way
+# but it creates gcode. It is pretty sure not the correct way to do it!
+#
+# I'm a noob and there are for sure better ways to do it 
+# Normally some stock material is used too etc.
+#
+##########################################################
+
+
+I'm not sure if the fontfile is needed after the shape was created.
+If there is no text visible just click on shapestring in the left treeview and change the entry "Font File" to whatever .ttf you have available and press enter.
+
+
+### Add the postprocessor ###
+
+Put the file "edm_grbl_post.py" into the folder used for the macros. On my linux machine the folder is: "/home/your-username/.local/share/FreeCAD/Macro/"
+Now open freecad and go to "edit->preferences" and click on the "path" icon. The click the tab "job preferences"
+In the section Defaults add the path to the Macro folder in the "Path" field and confirm with "apply"
+Freecad may need a restart after this.
+
+
+### Create a 2D textshape ###
+
+1. Open the Draft Workbench
+2. Click the "S" to create a shape from text
+3. Insert the text string in the left menu, set the fontsize and select a font. I used moonhouse from dafont.com
+4. Click ok.
+5. In the left treeview click on the created object, choose placement->position and set X Y Z all to 0
+
+
+### Create the gcode ###
+
+1. Open the Path workbench
+2. Click the Job icon to create a new Job
+3. Select the 2D shape of the text in the popup and hit ok
+4. In the new menu that is now available on the left select "output"
+5. A postprocessor is needed. In our case select the "edm_grbl" in the "processor" drop down list
+6. work coordinate system is G54
+7. click ok to create the new job
+
+### create the electrode tool. This is only done once and remains available in the future. ###
+
+1. click the toolbit dock icon in the workbench tool panel at the top. It looks like three drills.
+2. In the popup again click the icon with the three drills to create a new tool ( this tool is global available and needs t be added to the job later)
+3. Click "add existing" in the popup
+4. choose the 5mm_Endmill.fctb file and hit Ok. The new tool should now be available at the bottom of the list. 
+5. Double click the new entry. Give it a name like 1.5mm_electrode. Set cutting edge height and length both to 10cm. Diameter and shank diameter to 0,15cm. Then press ok and close the popup.
+6. On the right tool selector menu select the 1.5mm_electrode and click "add to job"
+9. close the Tool Selector window
+
+The tool is now listed in the left treeview under job->tools->TC: 1.5mm_electrode
+ 
+### move the text to a position and resize the stock material ###
+
+The stock dimensions can be changed with a double click on job->stock in the setup tab
+
+1. change Ext.X to 0cm - 12cm and Ext.Y to 0cm - 3cm and confirm with "ok"
+2. select job->stock in the left treeview with a single click
+3. set placement->position to X=0 Y=0. ( not sure why but for me this was set to something like X=0,04 Y=0,02 )
+4. single click on job->model->Model-ShapeString and under placement->position set X=0,4cm Y=0,4cm
+
+
+### create the toolpath ###
+
+1. click the "Profile" icon from the workbensh tools
+2. select the 1.5mm electrode tool in the popup and press "ok"
+3. set "Cut Side" to inside and check "use start point"
+4. set "extra offset" to 0,01cm and confirm with "ok"
+
+### Preview the process ###
+
+1. click the CAM Simulator Icon and press the play button
+
+If it looks ok cool.
+
+### create the Gcode ###
+
+1. Single click the "job" entry and click the postprocess icon in the top panel.
+2. select a filename ( logo-demo.gcode ) and a folder where you want to safe the gcode
+
+Done.
+
+
+
+

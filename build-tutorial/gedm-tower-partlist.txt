@@ -165,8 +165,10 @@ A big set jumper wires. 10cm and 20cm. Male to male and male to female for both 
 PLA+ and a little TPU for a small belt.
 
 
-My drill chuck is a big ballbearing with a 12mm OD 10mm ID steel tube pressed into the bearing and a small dremel like chuck with 10mm OD pressed into the tube.
-The ball bearing has 12mm ID and 32mm OD. 10mm height. It is pressed into the tool head. A little glue would be good but I just pressed it in.
+
+C12-ER11M-100L ( hollow and needs to be cut to 80mm length )
+I used this one that is hollow by default: https://www.amazon.de/dp/B087N5H9T4?psc=1&ref=ppx_yo2ov_dt_b_product_details
+The shaft slides into the bearings and needs one or two shaft collars with 12mm inner diameter.
 
 
 2x 6201Z 12x32x10mm bearing ( one is pressed into the top lid and one into the main tool head )
