@@ -224,9 +224,11 @@ Stepper:
 
 Z-Axis:
 
+# Dual shaft stepper for the spindle and wire rewinder
 Nema 17; 0.4Nm; 1.68A; 1.8° Step angle; 5mm shaft; Rated 2.8v; DUAL SHAFT is needed if the machine is used with the wire extension!
 The stepper I use: SY42STH47-1684B
  
+# Stepper for the axis 
 Nema 17 planetary gearbox; 19.2:1; 8mm shaft; ( if you can't get the exact 19,2:1 gear ratio you can use 19:1 or similar; This can be adjusted in the software)
 https://www.reichelt.de/schrittmotor-hoch-drehmoment-hybrid-2-phasen-nema17-01-p219027.html?&trstct=pos_0&nbc=1
 
