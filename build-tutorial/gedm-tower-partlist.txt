@@ -81,7 +81,6 @@ Some M3, M4, M5, M6, M8 screws, nuts and T-slot nuts and a set of setscrews.
 #####################################################
 
 
-  1x 12V Geared DC Motor 200rpm or Nema17 stepper ( used for electrode rotation )
   1x 12v Peristaltic Pump 3mm x 5mm silicone tubing. 150ml/min 
   1x 3mm x 5mm silicone tube; 2 meters;
   The diameter of the silicone tube is important if it is used with the round bar drill jig. 150ml/min seems to work "ok".
@@ -224,7 +223,10 @@ M3x8 ( number of screws depends on the linear rail length you choose )
 Stepper:
 
 Z-Axis:
-Nema 17; 0.4Nm; 1.68A; 1.8° Step angle; 5mm shaft; Rated 2.8v (This is important! No 12v or 24v rated steppers. The steppers shares the PSU with other stuff that can't handle more than 12v.)
+
+Nema 17; 0.4Nm; 1.68A; 1.8° Step angle; 5mm shaft; Rated 2.8v; DUAL SHAFT is needed if the machine is used with the wire extension!
+The stepper I use: SY42STH47-1684B
+ 
 Nema 17 planetary gearbox; 19.2:1; 8mm shaft; ( if you can't get the exact 19,2:1 gear ratio you can use 19:1 or similar; This can be adjusted in the software)
 https://www.reichelt.de/schrittmotor-hoch-drehmoment-hybrid-2-phasen-nema17-01-p219027.html?&trstct=pos_0&nbc=1
 
@@ -240,7 +242,7 @@ This list may not be complete. Some screws and maybe other parts needed could be
 
 # XY Axis
 
-2x Nema 17; 0.4Nm; 1.68A; 1.8° Step angle; 5mm shaft; Rated 2.8v
+2x Nema 17; 0.4Nm; 1.68A; 1.8° Step angle; 5mm shaft; Rated 2.8v; I use: 17SY42STH47-1684A
 
     https://www.reichelt.de/schrittmotor-hoch-drehmoment-hybrid-2-phasen-nema17-01-p219027.html?&trstct=pos_0&nbc=1
 
