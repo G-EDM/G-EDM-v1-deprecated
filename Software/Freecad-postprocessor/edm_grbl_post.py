@@ -3,7 +3,6 @@
 # *   Copyright (c) 2014 sliptonic <shopinthewoods@gmail.com>               *
 # *   Copyright (c) 2018, 2019 Gauthier Briere                              *
 # *   Copyright (c) 2019, 2020 Schildkroet                                  *
-# *   2023, Roland Lautensack - Modified for G-EDM compatibility            *
 # *                                                                         *
 # *   This file is part of the FreeCAD CAx development system.              *
 # *                                                                         *
@@ -529,6 +528,7 @@ def parse(pathobj):
                         # so it should be no problem to only catch the G0
                         # and replace the G0 line where Z is involved completely with a M4
 
+
                         if "X" in c.Parameters or "Y" in c.Parameters:
                             # command has other axis 
                             Z_ONLY_COMMAND = False
@@ -540,7 +540,10 @@ def parse(pathobj):
                             # if "X" in c.Parameters or if "Y" in c.Parameters:
                                 # command has other axis 
 
-                            if Units.Quantity(c.Parameters[param], FreeCAD.Units.Length) > CURRENT_Z:
+                            z_position = round( c.Parameters[param], 8 );
+                            z_current  = round( CURRENT_Z, 8 );
+
+                            if z_position > z_current:
 
                                 if not Z_IS_UP:
 
@@ -555,7 +558,8 @@ def parse(pathobj):
 
                                 Z_IS_UP = True
 
-                            elif Units.Quantity(c.Parameters[param], FreeCAD.Units.Length) < CURRENT_Z:
+                            elif z_position < z_current and command not in ['G0','G00']:
+                            
                             
                                 if Z_IS_UP:
 
