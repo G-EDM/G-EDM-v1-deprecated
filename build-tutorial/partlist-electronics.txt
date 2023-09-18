@@ -302,8 +302,8 @@ https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09
 
 * External boards
 
-    - 1x ESP32 38Pin WROOM-32 NodeMCU
-    https://www.amazon.com/DORHEA-Development-Microcontroller-NodeMCU-32S-ESP-WROOM-32/dp/B08MQDS6WV
+    - 1x ESP32 38Pin WROOM-32 NodeMCU Dev Kit C Development Board with CP2102
+    https://www.amazon.de/AZDelivery-NodeMCU-Development-Nachfolgermodell-ESP8266/dp/B074RGW2VQ
     - 4x TMC2209 v2.0 ( For the sinker only build 2 of them will do. 1 for Z and 1 for the spindle )
     Note: Those drivers are originally designed by watterott and called SilentStepStick
     They shared the design with the opensource community and now a lot of clones are sold on Amazon.

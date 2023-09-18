@@ -1,7 +1,8 @@
 #######################################################
 #
 # GEDM ESP Pinout
-# ESP32 WROOM 32 with 38 Pins
+# ESP32 WROOM 32 with 38 Pins with CP2102 
+# https://www.amazon.de/AZDelivery-NodeMCU-Development-Nachfolgermodell-ESP8266/dp/B074RGW2VQ
 #
 #######################################################
 
