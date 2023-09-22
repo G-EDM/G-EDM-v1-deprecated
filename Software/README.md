@@ -33,7 +33,7 @@ needs to be set to:
 
     #define REPEAT_CAL true
 
-After the recalivration is done this change needs to be reversed.
+After the recalibration is done this change needs to be reversed.
 
 
 
