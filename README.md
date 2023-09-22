@@ -77,6 +77,14 @@ Added all 3D models to build the XY conversion
 
 
 
+# WARNING
+
+An activated carbon airfilter is highly recommended. The spark of EDM can evaporate metals and may create some amount of metal fumes. 
+It is also recommended to use gloves to handle the dirty water. If a waterfilter is used it may be a good advice to not open it after it fully dried out due to the super tiny metal particles created by EDM.
+
+G-EDMs health tip: Don't smoke or drink metal. 
+
+
 
 # The G-EDM
 
