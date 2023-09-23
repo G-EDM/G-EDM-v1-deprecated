@@ -1159,7 +1159,7 @@ void G_EDM_UI_CONTROLLER::loader_screen()
   tft.drawString("Powered by TFT_eSPI and G-RBL", 20, 120, 2);
   tft.drawString("Credits:", 20, 160, 2);
   tft.drawString("8kate, Teelicht", 20, 180, 2);
-  tft.drawString("Ethan Hall, Alex Treseder", 20, 200, 2);  
+  tft.drawString("Ethan Hall, Alex Treseder, Shrawan", 20, 200, 2);  
   
 
 }
