@@ -4,6 +4,8 @@ Work in progress.
 
 Finally the G-RBL beta release is available! Check it out now.
 
+# Currently windows user may have some troubles with compiling. We are working on it!
+
 
 Added some parts to build a cheaper version:
     [>>> Entry level G-EDM <<<](https://github.com/G-EDM/G-EDM/tree/main/3D-files/G-EDM-Tower/printed-parts/work-in-progress/entry-level-gedm)
