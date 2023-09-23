@@ -17,6 +17,9 @@ Added all 3D models to build the XY conversion
   ██████        ███████ ██████  ██      ██ 
 ```
 
+
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/2mm-hss-2.jpg">
+
  
 
 # About the G-EDM
@@ -87,6 +90,7 @@ G-EDMs health tip: Don't smoke or drink metal.
 
 
 # The G-EDM
+
 
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/HSS/5.jpg">
 
