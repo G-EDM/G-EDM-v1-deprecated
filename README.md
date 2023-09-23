@@ -1,8 +1,9 @@
 Work in progress. 
 
-# G-RBL beta is out
+# G-RBL beta discovers the wild! 
 
 Finally the G-RBL beta release is available! Check it out now.
+
 
 
 Added some parts to build a cheaper version:
