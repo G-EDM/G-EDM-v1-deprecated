@@ -21,6 +21,9 @@
 # How to install G-RBL
 
 The G-RBL code is build with VisualStudioCode and needs the platform.io (PlatformIO IDE) extension.
+
+The board I have configured in platformio is "Espressif ESP32 Dev Module"
+
 After installing PlatformIO in VisualStudio just open the project folder and press the upload button. It should compile G-RBL and flash it to the connected ESP32. It may be needed to press the Boot button on the ESP to enter the flashing mode. As soon as it starts uploading the button can be released. 
 
 Note: After the Software is flashed to the ESP it reboots and enters a calibration mode for the TFT display. If something fails with the initial calibration it is needed to reflash the software two times. 
