@@ -26,7 +26,7 @@
 //################################################
 #include "Grbl.h"
 
-#include <Arduino.h>
+//#include <Arduino.h>
 
 String active_profile = "None";
 

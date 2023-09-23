@@ -41,7 +41,7 @@ const char* const GRBL_VERSION_BUILD = "20211103";
 #include "System.h"
 #include "GCode.h"
 #include "gedm_planner/Planner.h"
-#include "Limits.h"
+#include "machine_limits.h"
 #include "MotionControl.h"
 #include "Protocol.h"
 #include "Serial.h"
