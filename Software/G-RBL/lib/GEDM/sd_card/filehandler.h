@@ -11,7 +11,7 @@
 # Copyright (c) Roland Lautensack        
 */ 
 #include <WString.h>
-#include <FS.h>
+//#include <FS.h>
 #include <SD.h>
 #include "config/definitions.h"
 #include <stdint.h>
