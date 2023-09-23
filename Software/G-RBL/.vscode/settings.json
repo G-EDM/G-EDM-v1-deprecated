@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "typeinfo": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "exception": "cpp",
+        "new": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "atomic": "cpp",
+        "functional": "cpp",
+        "sstream": "cpp",
+        "cmath": "cpp",
+        "cstdlib": "cpp",
+        "random": "cpp",
+        "system_error": "cpp"
+    },
+    "workbench.cloudChanges.autoResume": "off",
+    "workbench.cloudChanges.continueOn": "off",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "npm.fetchOnlinePackageInfo": false,
+    "cmake.configureOnOpen": false
+}
