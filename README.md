@@ -17,6 +17,7 @@ Added all 3D models to build the XY conversion
   ██████        ███████ ██████  ██      ██ 
 ```
 
+# New: The wire EDM extension is working
 
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/2mm-hss-2.jpg">
 
