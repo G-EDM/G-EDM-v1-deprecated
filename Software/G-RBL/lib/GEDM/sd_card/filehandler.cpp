@@ -199,7 +199,7 @@ String G_FILEHANDLER::get_file_contents(String file_path)
  * These two functions are exclusive for the gcode reading 
  * 
  **/
-boolean G_FILEHANDLER::openFile(const char *path)
+bool G_FILEHANDLER::openFile(const char *path)
 {
   current_file = SD.open(path, FILE_READ);
   if (!current_file)
@@ -212,7 +212,7 @@ boolean G_FILEHANDLER::openFile(const char *path)
   sd_current_line_number = 0;
   return true;
 }
-boolean G_FILEHANDLER::closeFile()
+bool G_FILEHANDLER::closeFile()
 {
   if (!current_file)
   {
@@ -258,7 +258,7 @@ bool G_FILEHANDLER::get_is_busy(){
 }
 
 
-boolean G_FILEHANDLER::readFileLine(char *line, int maxlen){
+bool G_FILEHANDLER::readFileLine(char *line, int maxlen){
   if (!current_file)
   {
     return false;

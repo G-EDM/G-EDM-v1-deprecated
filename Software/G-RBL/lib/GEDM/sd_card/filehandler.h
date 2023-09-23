@@ -11,12 +11,12 @@
 # Copyright (c) Roland Lautensack        
 */ 
 #include <WString.h>
-//#include <FS.h>
+#include <FS.h>
 #include <SD.h>
 #include "config/definitions.h"
 #include <stdint.h>
 #include "shared.h"
-
+//#include <SPI.h>
 
 extern bool    SD_ready_next;  // Grbl has processed a line and is waiting for another
 extern uint8_t SD_client;
@@ -87,9 +87,9 @@ public:
 
 SDState  get_sd_state(bool refresh);
 SDState  set_sd_state(SDState state);
-boolean  openFile(const char* path);
-boolean  closeFile();
-boolean  readFileLine(char* line, int len);
+bool  openFile(const char* path);
+bool  closeFile();
+bool  readFileLine(char* line, int len);
 void     readFile(const char* path);
 uint32_t sd_get_current_line_number();
 void     sd_get_current_filename(char* name);
