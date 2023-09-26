@@ -226,7 +226,7 @@ extern uint16_t max_feeds_micros[N_AXIS];
 
 
 // https://github.com/G-EDM/G-EDM/#donations
-#define EXTENDED_FEATURES true
+#define EXTENDED_FEATURES false
 #define ENABLE_SERIAL false
 
 extern int wire_spindle_speed; // frequency in hz
