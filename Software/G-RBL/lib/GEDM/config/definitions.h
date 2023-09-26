@@ -206,7 +206,7 @@ extern uint16_t max_feeds_micros[N_AXIS];
 #define FILTER_LEN 5 // number of samples for multisampling. Not used for vSense
 #define EDM_NO_PROBE false
 #define OPTIMIZE_MICROSTEPPING true // deprecated;
-#define PWM_FREQUENCY_MAX 70000 // The PWM function used currently can only be as high as 70khz.
+#define PWM_FREQUENCY_MAX 500000 // The PWM function used currently can only be as high as 70khz.
                                 // The duty resolution sets the limit. Lower resolution would allow higher values.
                                 // Above 50khz tests showed switch losses with the current setup I use
 #define PWM_FREQUENCY_MIN 1000  // same as above. The PWM function can only get as low as 1000. in theory it goes lower but throws errors below 1000. Still seems to work if lower.
