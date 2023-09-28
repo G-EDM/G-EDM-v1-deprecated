@@ -129,8 +129,8 @@ void G_EDM_SENSORS::generate_reference_voltage(){
 
 float G_EDM_SENSORS::calulate_source_voltage()
 {
-    float source_voltage = feedback_voltage * (VOLTAGE_DIVIDER_R1 + VOLTAGE_DIVIDER_R2) / VOLTAGE_DIVIDER_R2;
-    return source_voltage;
+    //60/2.8*1.4
+    return SUPPLY_VOLTAGE_MAX / VSENSE_MAX * feedback_voltage;
 }
 // calculates the feedback and source voltage based on the raw adc reading
 void IRAM_ATTR G_EDM_SENSORS::update_feedback_data()

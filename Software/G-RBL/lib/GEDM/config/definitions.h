@@ -35,7 +35,10 @@
   **/
 #define GEDM_PWM_PIN           22          // PWM for the pulsegenerator
 #define GEDM_A_STEP_PIN        12          // spindle step pin
-#define GEDM_A_DIRECTION_PIN   1           // spindle dir pin. Note hti s is the TX1 Pin. If UART is used it will changed the Pin state while communicating!
+#define GEDM_A_DIRECTION_PIN   1           // spindle dir pin. Note this is the TX1 Pin. If UART is used it will changed the Pin
+#define GEDM_A_DIRECTION_PIN_NEW   16        
+
+
 #define X_STEP_PIN             GPIO_NUM_27
 #define X_DIRECTION_PIN        GPIO_NUM_26
 #define X_LIMIT_PIN            GPIO_NUM_39
@@ -217,8 +220,14 @@ extern uint16_t max_feeds_micros[N_AXIS];
 #define PROBE_SPEED 60.0 // mm/min; speed used until the first contact (short) was made
 #define PROBE_RETRACTION_MM 1.0
 /** servo feedback **/
-#define VOLTAGE_DIVIDER_R1 10000
-#define VOLTAGE_DIVIDER_R2 470 // 470 // the value of this resistor defines the maximum vSense voltage
+#define VSENSE_MAX         2.8 // 2.8v is the max the ADC can read. Don't change this
+#define SUPPLY_VOLTAGE_MAX 60.0 // this is the voltage corresponding to he max possible
+                                // 2.8v vSense feedback (at 2.8v vSense supply voltage = this)
+                                // this is only used for displaay purposes 
+                                // the edm process doesn't care about it since it only calculates with
+                                // with the vSense voltage
+                                // if the pulsegenerator works at 100v just set this to 100
+
 #define VSENSE_SAMPLES 5 // the number of samples taken from the pin for each update of the vSense value
 #define INTERFACE_INTERVAL 50.0             // faster if not in EMD process
 #define INTERFACE_INTERVAL_WHILE_EDM 100.0 // lesser updates if in EDM process since the updates interupt our step pulses

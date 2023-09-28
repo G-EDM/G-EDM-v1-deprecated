@@ -262,12 +262,23 @@ This list may not be complete. Some screws and maybe other parts needed could be
     
 #####################################################
 ####
-#### Wire EDM extension
+#### Wire EDM extension V2
 ####
 #####################################################
 
 Bearings:
 
-MR63ZZ 3x6x2.5mm
-V623ZZ 3x12x4mm bearings
-684ZZ  4x9x4 bearing
+2x MR63ZZ 3x6x2.5mm
+7x V623ZZ 3x12x4mm bearings
+
+4x 696-2RS Kugellager seald 6x15x5mm 
+https://www.amazon.de/dp/B09V5DBM6Y?psc=1&ref=ppx_yo2ov_dt_b_product_details
+
+4x v groove bearing 6x30x8mm (2.5mm groove depth. They are sold as 8mm width but the center is 9mm and only the outer ring is 8mm. Integrated washers)
+https://www.amazon.de/dp/B076VCCCMS?psc=1&ref=ppx_yo2ov_dt_b_product_details
+
+2x Pneumatic fittings with M10 thread
+https://www.amazon.de/dp/B07DGLCJ4Z?psc=1&ref=ppx_yo2ov_dt_b_product_details
+
+1x set with 3D printer nozzles
+

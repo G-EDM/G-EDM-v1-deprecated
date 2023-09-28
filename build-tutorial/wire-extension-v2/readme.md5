@@ -1,0 +1,5 @@
+The main part of the wire extension has interal routing. 
+
+It needs to be printed with supports touching buildplate only! There is no way to remove supports from the internal routing.
+
+
