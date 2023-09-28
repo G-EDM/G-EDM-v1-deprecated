@@ -26,7 +26,7 @@
   * /build-tutorial/ESP32-Pinout.txt
   * 
   * Note: vSense, Limits and Start/Stop use ADC Channels 
-  * So changing the Pins here won't work. The ADC channels need to be changed in the sensros.cpp file
+  * So changing the Pins here won't work. The ADC channels need to be changed in the sensors.cpp file
   * in this case
   * 
   * A list with the GPIOs and the corresponding ADC channel can be found here:
