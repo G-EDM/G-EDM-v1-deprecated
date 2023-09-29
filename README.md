@@ -8,9 +8,12 @@ Finally the G-RBL beta release is available! Check it out now.
 
 Added some parts to build a cheaper version:
     [>>> Entry level G-EDM <<<](https://github.com/G-EDM/G-EDM/tree/main/3D-files/G-EDM-Tower/printed-parts/work-in-progress/entry-level-gedm)
+
     
 Added all 3D models to build the XY conversion 
     
+
+Contact: goblin-dev@proton.me
 
 
 # Let there be sparks... ⚡⚡⚡
