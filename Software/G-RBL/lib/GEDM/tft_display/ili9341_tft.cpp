@@ -192,6 +192,7 @@ void IRAM_ATTR ui_task(void *parameter)
         Serial.println("EDM stop forced");
         /** process stopped **/
         ui_controller->reset_after_job();
+        api::push_cmd("G90 G54 G21\r\n");
         vTaskDelay(100);
         continue;
       }
@@ -200,6 +201,11 @@ void IRAM_ATTR ui_task(void *parameter)
       {
         Serial.println("EDM stop normal");
         ui_controller->reset_after_job();
+        if(operation_mode==1){
+          api::push_cmd("G90 G54 G21 Z0\r\n");
+        } else{
+          api::push_cmd("G90 G54 G21\r\n");
+        }
         vTaskDelay(100);
         continue;
       }

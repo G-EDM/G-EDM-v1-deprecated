@@ -19,7 +19,7 @@
  * 
  **/
 #include "Grbl.h"
-#include <stdlib.h>  // PSoc Required for labs
+#include <stdlib.h>  
 
 #include "tft_display/ili9341_tft.h"
 
@@ -71,7 +71,7 @@ void G_EDM_PLANNER::resume(){
 }
 
 /** 
-  * adds the step delay and signal core 0 that it has some time to do something if needed 
+  * adds the step delay and signals core 0 that it has some time to do something if needed 
   **/
 bool G_EDM_PLANNER::add_step_delay( int _step_delay, bool enable_motion_plan ){
     microseconds     = ( uint64_t ) esp_timer_get_time();
@@ -637,25 +637,6 @@ bool G_EDM_PLANNER::move_line( float* target, Line_Config &line ){
 
 
 
-/**
-  * HISTORY  
-  * This is the core of the history
-  **/
-
-
-void G_EDM_PLANNER::position_history_reset(){
-    max_reverse_depth        = 2; // max two lines back in wire mode retractions
-    has_reverse              = 0;
-
-    position_history_is_between    = false;
-    position_history_index_current = 1; 
-    position_history_index         = 0;
-    planner_is_synced              = false;
-    memset(position_history, 0, sizeof(position_history[0]));
-    float _target[MAX_N_AXIS];
-    push_break_to_position_history();
-    _state.z_axis_is_up = false;
-}
 /** 
   * breaks are ignored in forward direction but prevent the history from moving back 
   * This is just a cheap and easy way to prevent M3/M4 up/downs from becoming a problem
@@ -812,6 +793,27 @@ bool G_EDM_PLANNER::position_history_move_back(){
 }
 
 
+/**
+  * HISTORY  
+  * This is the core of the history
+  **/
+
+
+void G_EDM_PLANNER::position_history_reset(){
+    max_reverse_depth        = 2; // max two lines back in wire mode retractions
+    has_reverse              = 0;
+
+    position_history_index_current = 1; 
+    position_history_index         = 0;
+    position_history_is_between    = false;
+    planner_is_synced              = false;
+
+    memset(position_history, 0, sizeof(position_history[0]));
+    float _target[MAX_N_AXIS];
+    push_break_to_position_history();
+    _state.z_axis_is_up = false;
+    position_history_index_current = position_history_index;
+}
 bool G_EDM_PLANNER::position_history_sync( Line_Config &line ){
 
     // it still moves the full line back
@@ -825,7 +827,9 @@ bool G_EDM_PLANNER::position_history_sync( Line_Config &line ){
     int  last_direction         = 0; 
     bool enable_history         = line.enable_position_history; // history is only useful for wire edm    
 
-    while( ! motion_ready ){
+    motion_ready = position_history_is_at_final_index();
+
+    while( !motion_ready ){
 
         motion_ready = false;
 
@@ -881,6 +885,9 @@ bool G_EDM_PLANNER::position_history_sync( Line_Config &line ){
     sys.gedm_retraction_motion = false;
     short_circuit_retraction   = false;
     recovered                  = true;
+    // to be safe that history is synced
+    // even after a hard motion cancel etc.
+    position_history_index_current = position_history_index;
     return _success;
 }
 
