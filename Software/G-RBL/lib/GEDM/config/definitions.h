@@ -136,14 +136,14 @@ extern uint16_t max_feeds_micros[N_AXIS];
   *
   **/
 //#define DEFAULT_HOMING_CYCLE_2 bit(Z_AXIS)
-#define DEFAULT_Z_STEPS_PER_MM 4096.0 // belt driven uses a different formular: fullstepsPerRev*microsteps/(pitch*pulleyTeeth)
+#define DEFAULT_Z_STEPS_PER_MM 4096.0 
 #define DEFAULT_Z_MAX_RATE 200.0 // mm/min
 #define DEFAULT_Z_ACCELERATION 100.0 // mm/sec^2
 #define DEFAULT_Z_MAX_TRAVEL 300.0 // mm NOTE: Must be a positive value.
 #define STEPPER_MOTOR_MICROSTEPS_EDM 64 // default
 #define STEPPER_MOTOR_MICROSTEPS_TRAVEL 32 // not used at the moment
 #define Z_AXIS_JOG_SPEED 200
-#define DEFAULT_Z_MAX_TRAVEL 300.0 // mm NOTE: Must be a positive value.
+
 
 
 /**
@@ -152,7 +152,7 @@ extern uint16_t max_feeds_micros[N_AXIS];
   *
   **/
 #define DEFAULT_HOMING_CYCLE_0 bit(X_AXIS)
-#define DEFAULT_X_STEPS_PER_MM 3840.0//=MS32//960.0=MS8 // mm/min 5mm ballscrew 1:3 pulley reduction 8 microsteps ( fullstepsPerRev * microsteps * gearRation / ballscrew pitch ) 200 * 8 * 3 / 5
+#define DEFAULT_X_STEPS_PER_MM 3840.0
 #define DEFAULT_X_MAX_RATE 200.0 // mm/min
 #define DEFAULT_X_ACCELERATION 100.0 // mm/sec^2
 #define DEFAULT_X_MAX_TRAVEL 240.0 // mm NOTE: Must be a positive value.
