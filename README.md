@@ -2,7 +2,7 @@ Work in progress.
 
 # G-RBL beta discovers the wild! 
 
-Finally the G-RBL beta release is available! Check it out now.
+Finally the G-RBL beta release is available! Check it out now and discover the meaning of made in Germany.
 
 
 
