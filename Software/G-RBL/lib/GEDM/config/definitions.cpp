@@ -38,8 +38,8 @@ float vSense_drop_range_noload = 10.0;  // no load if drop is below this percent
                                         // with the 0.1uf capacitor this should be no problem anymore
                                         // if probing fails the value can be changed in the software
 float VSENSE_DROP_RANGE_SHORT = 65.0;   // voltage drops above this value are concidered a full short circuit
-float pwm_duty_probing        = 10.0;
-int   pwm_frequency_probing   = 70000;
+float pwm_duty_probing        = 30.0;
+int   pwm_frequency_probing   = 40000;
 
 float electrode_up_offset_mm  = 2.0;
 float electrode_down_probe_mm = 0.5; 
