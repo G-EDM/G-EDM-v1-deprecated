@@ -29,6 +29,7 @@ private:
   int freq_min;
   int pwm_frequency;
   int pwm_duty_cycle;
+  float pwm_duty_cycle_percent;
   int pwm_max_duty_cycle; // 255;//@8bit 1023@@10bit resolution
   float duty_cycle_percent;
   float pwm_period;

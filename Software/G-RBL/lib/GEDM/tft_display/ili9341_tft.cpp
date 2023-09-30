@@ -7,7 +7,11 @@
 #
 # This is a beta version for testing purposes.
 # Only for personal use. Commercial use or redistribution without permission is prohibited. 
-# Copyright (c) Roland Lautensack        
+# Copyright (c) Roland Lautensack  
+#
+# Thanks to Shrawan Khatri for pointing out the issue with the duty cycle
+# After changing the PWM generation to MCPWM I missed to remove the 
+# resolution calculations and the PWM was way off      
 */ 
 #include "ili9341_tft.h"
 #include "Motors/Motors.h"

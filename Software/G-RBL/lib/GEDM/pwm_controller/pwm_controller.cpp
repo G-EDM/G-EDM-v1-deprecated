@@ -29,6 +29,7 @@ G_EDM_PWM_CONTROLLER::G_EDM_PWM_CONTROLLER(){
   freq_max           = 20000;
   freq_min           = 1000;    
   pwm_frequency      = 5000;
+  pwm_duty_cycle_percent = 0;
   pwm_duty_cycle     = 0;
   pwm_max_duty_cycle = 1023;//255;//@8bit 1023@@10bit resolution
   duty_cycle_percent = 0.0;
@@ -76,9 +77,11 @@ void G_EDM_PWM_CONTROLLER::change_pwm_frequency( int freq ){
 
 }
 void G_EDM_PWM_CONTROLLER::update_duty( float duty_percent ){
-  int duty = int( ( float ) pwm_max_duty_cycle / 100.0 * duty_percent );
-  change_pwm_duty( duty );
-  pwm_duty_cycle = duty;
+  //int duty = int( ( float ) pwm_max_duty_cycle / 100.0 * duty_percent );
+  //change_pwm_duty( duty );
+  change_pwm_duty( duty_percent );
+  //pwm_duty_cycle = duty;
+  pwm_duty_cycle_percent = duty_percent;
   update_values();
 }
 void G_EDM_PWM_CONTROLLER::change_pwm_duty( int duty ){
@@ -92,10 +95,10 @@ void G_EDM_PWM_CONTROLLER::pwm_off(){
 }
 void G_EDM_PWM_CONTROLLER::pwm_on(){
   change_pwm_frequency( pwm_frequency );
-  change_pwm_duty( pwm_duty_cycle );
+  change_pwm_duty( pwm_duty_cycle_percent );
 }
 void G_EDM_PWM_CONTROLLER::update_values(){      
-  duty_cycle_percent = 100.0 / float( pwm_max_duty_cycle ) * float( pwm_duty_cycle );
+  duty_cycle_percent = pwm_duty_cycle_percent;//100.0 / float( pwm_max_duty_cycle ) * float( pwm_duty_cycle );
   pwm_period         = 1.0   / float( pwm_frequency );
   pwm_t_on           = pwm_period / 100.0 * float( duty_cycle_percent );
   pwm_t_off          = pwm_period - pwm_t_on;
