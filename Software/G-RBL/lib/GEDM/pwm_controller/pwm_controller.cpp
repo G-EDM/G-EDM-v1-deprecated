@@ -47,9 +47,6 @@ bool G_EDM_PWM_CONTROLLER::pwm_is_enabled(){
 int G_EDM_PWM_CONTROLLER::get_freq(){
   return pwm_frequency;
 }
-int G_EDM_PWM_CONTROLLER::get_duty(){
-  return pwm_duty_cycle;
-}
 float G_EDM_PWM_CONTROLLER::get_duty_percent(){
   return duty_cycle_percent;
 }
@@ -84,14 +81,14 @@ void G_EDM_PWM_CONTROLLER::update_duty( float duty_percent ){
   pwm_duty_cycle_percent = duty_percent;
   update_values();
 }
-void G_EDM_PWM_CONTROLLER::change_pwm_duty( int duty ){
+void G_EDM_PWM_CONTROLLER::change_pwm_duty( float duty ){
   if( ! spark_generator_is_running && ! lock_reference_voltage ){
     duty = 0;
   }
   mcpwm_set_duty(MCPWM_UNIT_1, MCPWM_TIMER_0, MCPWM_OPR_A, float( duty ) );
 }
 void G_EDM_PWM_CONTROLLER::pwm_off(){
-  change_pwm_duty( 0 );
+  change_pwm_duty( 0.0 );
 }
 void G_EDM_PWM_CONTROLLER::pwm_on(){
   change_pwm_frequency( pwm_frequency );

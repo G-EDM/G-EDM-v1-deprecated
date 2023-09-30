@@ -46,7 +46,6 @@ public:
   void setup_pwm_channel(void);
   bool pwm_is_enabled(void);
   int get_freq(void);
-  int get_duty(void);
   float get_duty_percent(void);
   float get_period(void);
   float get_t_on(void);
@@ -54,7 +53,7 @@ public:
   void set_min_max(int _min, int _max);
   void set_pwm_pin( int pin );
   void change_pwm_frequency(int freq);
-  void change_pwm_duty(int duty);
+  void change_pwm_duty(float duty);
   void pwm_off(void);
   void pwm_on(void);
   void update_values(void);
