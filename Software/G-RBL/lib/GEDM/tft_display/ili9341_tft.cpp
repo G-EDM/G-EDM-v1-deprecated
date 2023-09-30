@@ -250,6 +250,7 @@ void G_EDM_UI_CONTROLLER::alarm_handler(){
   {
     stop_spindle();
   }
+  disable_spark_generator();
   vTaskDelay(200);
   tft.fillScreen(TFT_BLACK);
   tft.setTextSize(2);
