@@ -29,6 +29,8 @@ Contact: goblin-dev@proton.me
 # New: The wire EDM extension is working
 
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/2mm-hss-2.jpg">
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/5mm-alu-rick-morty-4.jpg">
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/5mm-alu-rick-morty-5.jpg">
 
  
 
