@@ -28,14 +28,13 @@ bool  z_no_home                 = true;  // set to true if no homing is needed a
 float source_voltage_min        = 20.0;  // the minimum input voltage, EDM button won't do anything until this voltage is delivered from the PSU
 //float reference_voltage  = 0.0; // we store the feedback voltage here to lock it in when the EDM starts
 DMA_ATTR bool lock_reference_voltage = false;
-float vsense_drop_range_min          = 5.0;  // target range bottom. We try to be between min and max and hodl there
-float vsense_drop_range_max          = 20.0; // target range top. A default range from min+10 it could be min+40. 
+float vsense_drop_range_min          = 7.0;  // target range bottom. We try to be between min and max and hodl there
+float vsense_drop_range_max          = 30.0; // target range top. A default range from min+10 it could be min+40. 
                                              // That produces lesser motion but a little motion is not a bad thing
                                              // for a more steady burn use min+20/30/40
 float vSense_drop_range_noload = 10.0;  // no load if drop is below this percent; Pin reading is noisy and can deliver huge failures. 
                                         // this can be a real problem while probing. It get's worse with lower voltages
                                         // example: At 25v the vSense Feedback is about 1v. 0.1v are 10%. And the spikes can be worse than that.
-                                        // with the 0.1uf capacitor this should be no problem anymore
                                         // if probing fails the value can be changed in the software
 float VSENSE_DROP_RANGE_SHORT = 65.0;   // voltage drops above this value are concidered a full short circuit
 float pwm_duty_probing        = 30.0;
