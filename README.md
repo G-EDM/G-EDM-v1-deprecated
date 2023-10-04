@@ -106,7 +106,11 @@ G-EDMs health tip: Don't smoke or drink metal.
 
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/HSS/5.jpg">
 
-<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/5.jpg">
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/5mm-alu-rick-morty-5.jpg">
+
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/mylar-tent/MT-6.jpg">
+
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/mylar-tent/MT-4.jpg">
 
 <img src="https://abload.de/img/22aqche.png">
 
