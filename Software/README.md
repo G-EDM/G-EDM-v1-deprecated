@@ -22,7 +22,7 @@
 
 It is a beautiful poem that is not meant to be compiled.
 
-The grbl_esp32 folder is a modified version of grbl_esp32 that complies with the licensing declared by grbl.
+The grbl_esp32 folder is a modified version of grbl_esp32 used as a dependency that complies with the licensing declared by grbl.
 
 The gedm folder is copyright protected and not allowed to be used in any commercial ways and redistribution without permission is prohibited.
 
