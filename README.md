@@ -1,5 +1,15 @@
 Work in progress. 
 
+# Possible licensing issues
+
+Due to some questions about licensing the grbl code is temporarily unpublished.
+It may be possible that the license of grbl spawns across the gedm code. 
+It is clearly visible that, even if this is the case, this would be an error.
+So the code was published on error with maybe a problematic licensing.
+Until this issue is adressed the code remains unpublished and I clearly say that commercial use or redistribution of the
+gedm library is prohibited. 
+
+
 # G-RBL beta discovers the wild! 
 
 Finally the G-RBL beta release is available! Check it out now .
