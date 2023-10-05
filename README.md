@@ -1,18 +1,9 @@
 Work in progress. 
 
-# Possible licensing issues
-
-Due to some questions about licensing the grbl code is temporarily unpublished.
-It may be possible that the license of grbl spawns across the gedm code. 
-It is clearly visible that, even if this is the case, this would be an error.
-So the code was published on error with maybe a problematic licensing.
-Until this issue is adressed the code remains unpublished and I clearly say that commercial use or redistribution of the
-gedm library is prohibited. 
-
 
 # G-RBL beta discovers the wild! 
 
-Finally the G-RBL beta release is available! Check it out now .
+Finally the G-RBL beta release is available! Read it now!
 
 # Things that will follow soon
 
@@ -78,18 +69,6 @@ Contact: goblin-dev@proton.me
     
 
     
-
-# What this repository will provide
-
-    * Gerber files for different PCBs used in the G-EDM electrical discharge machine
-    * A highly customized GRBL fork with XYZA Axis support with SD Card and touch screen support
-    * A build tutorial 
-    * All 3D files
-    * A customized GRBL post processor for Freecad to create professional GCode
-    * Configuration files for GRBL-Plotter to create simple GCode 
-
-    
-
     
 # Follow the project on youtube:
 
