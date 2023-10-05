@@ -5,9 +5,13 @@ Work in progress.
 Finally the G-RBL beta release is available! Check it out now and discover the meaning of made in Germany.
 
 # Things that will follow soon
+
 An EMI safe protocol to have a way to communicate with G-RBL even if no touchscreen is attached
+
 Support for laser and normal milling operations
+
 Support for router type mills
+
 A fully GCode operated process that can be disabled to let the software take over the important things
 
 
