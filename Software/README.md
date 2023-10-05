@@ -12,10 +12,8 @@
  
 # Software section ( coming soon )
 
-    * G-EDM GRBL Fork to control a G-EDM with one or three axis
+    * G-EDM GRBL Poem
     * Freecad post processor to create GCode for the G-EDM with Freecads Path workbench
-    * GRBL-Plotter configuration files to create GCode with the GRBL-Plotter
-
 
 
 # G-RBL
