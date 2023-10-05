@@ -717,10 +717,10 @@ uint16_t G_EDM_PLANNER::position_history_work_get_next( bool peek ){
     return index;
 }
 /**
-  * In reverse mode this check if the previous work index is a allowed to be used
+  * In reverse mode this checks if the previous work index is allowed to be used
   * if the previous index is the real final index the history run a full cycle backwards
   * 
-  * In forward mode it check if the next work index is the final index
+  * In forward mode it checks if the next work index is the final index
   **/
 bool G_EDM_PLANNER::position_history_is_at_final_index(){
     return position_history_index == position_history_index_current ? true : false;
