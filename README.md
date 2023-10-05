@@ -2,7 +2,7 @@ Work in progress.
 
 # G-RBL beta discovers the wild! 
 
-Finally the G-RBL beta release is available! Check it out now and discover the meaning of made in Germany.
+Finally the G-RBL beta release is available! Check it out now .
 
 # Things that will follow soon
 
@@ -15,6 +15,7 @@ Support for router type mills
 A fully GCode operated process that can be disabled to let the software take over the important things
 
 
+# Changelog
 
 Added some parts to build a cheaper version:
     [>>> Entry level G-EDM <<<](https://github.com/G-EDM/G-EDM/tree/main/3D-files/G-EDM-Tower/printed-parts/work-in-progress/entry-level-gedm)
