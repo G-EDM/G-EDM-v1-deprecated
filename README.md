@@ -41,9 +41,8 @@ Contact: goblin-dev@proton.me
 # New: The wire EDM extension is working
 
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/2mm-hss-2.jpg">
-<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/5mm-alu-rick-morty-4.jpg">
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/5mm-alu-rick-morty-5.jpg">
-
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/dragon-2.jpg">
  
 
 # About the G-EDM
@@ -107,8 +106,6 @@ G-EDMs health tip: Don't smoke or drink metal.
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/HSS/5.jpg">
 
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/5mm-alu-rick-morty-5.jpg">
-
-<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/wire/dragon-2.jpg">
 
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/random/mylar-tent/MT-6.jpg">
 
