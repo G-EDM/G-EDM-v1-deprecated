@@ -126,3 +126,15 @@ The old controlpanel has been replaced by a nice looking one with better cable m
 
 <img src="https://github.com/G-EDM/G-EDM/blob/main/3D-files/ESP32-Controlbox/final-panel.png">
 
+
+
+# Other projects not related to the G-EDM
+
+For those interested in a raw, low cost and cool looking desktop edm machine I can highly recommend to take a look at the picoEDM from @alextreseder
+
+https://github.com/alextreseder/picoEDM
+
+<img src="https://github.com/alextreseder/picoEDM/blob/main/picoEDM.PNG">
+
+
+
