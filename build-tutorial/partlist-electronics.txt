@@ -2,13 +2,16 @@
 
 # Requirements
 
-Don't bother with 30W soldering irons. The board uses power and gnd planes without thermal reliefs. The connections between the legs and the planes are fully filled and the heat applied will spread rapidly across the planes. A 30W soldering iron will not be able to keep up with this. It can be done somehow but I don't recommend it.
+Don't bother with 30-60W soldering irons. The board uses power and gnd planes without thermal reliefs. The connections between the legs and the planes are fully filled and the heat applied will spread rapidly across the planes. A 30W soldering iron will not be able to keep up with this. It can be done somehow but I don't recommend it.
 
 
-I use this soldering iron with the ~3mm single flat tip at full power and it works well. The small tips again won't do it for connections to the gnd plane:
+I use this soldering iron with the a big (not small not medium but BIG ) single flat tip. The small tips again won't do it for connections to the gnd and power plane, but will work for the non plane connections. Only use higher power if needed! If a contact seems hard to solder the power can be increased. For all other contacts normal power is ok.
 
-https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09DSDBC7G
+https://www.amazon.de/Elektrische-gesteuertem-automatischem-Schlafmodus-elektronische/dp/B09KGCSG83
+ 
+And a set of tips with the big tip needed (900M-T-4C 4mm bevel):
 
+https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9Fh%C3%BClse-L%C3%B6tstation/dp/B07VSDP5MH
 
 
 # Tools and useful parts
@@ -152,10 +155,10 @@ https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09
     - 1x R220 1W ( current limiting resistor to protect the ESP PWM Pin )
 
 
-* Capacitors
+* Capacitors ( If it needs to be low ESR it will be listed as such. If it is not listed as low ESR then don't use low esr. )
 
     - 1x 100uF >100V photo flash capacitor ( a normal low ESR capcitor should work too )
-    - 2x 47uf 63v low ESR capacitors ( more capacitance and lower voltage rating would be better. Something like: 680uf 25v would be good. Max 8mm diameter )
+    - 2x 47uf 63v capacitors 
     - 3x 100pF (or larger) 500V ceramic disc capacitors 5mm grid; ( CT81 high voltage ceramic capacitor is what I use. It needs to be >100v and < 0.1uF )
     - 3x 100nf 50V ceramic disc capacitors 5mm grid;
     https://www.amazon.com/BOJACK-Capacitor-Multilayer-Monolithic-Assortment/dp/B085RLXXBK
@@ -268,15 +271,15 @@ https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09
     https://www.amazon.com/AUKENIEN-Assortment-Resistors-Compliant-Electrical/dp/B09SZBQWV4
 
 
-* Capacitors
+* Capacitors ( If it needs to be low ESR it will be listed as such. If it is not listed as low ESR then don't use low esr. )
 
     - 3x 100pF (or larger) 500V ceramic disc capacitors 5mm grid; ( CT81 high voltage ceramic capacitor is what I use. It needs to be >100v and < 0.1uF )
     - 3x 100nf 50V ceramic disc capacitors 5mm grid;
     https://www.amazon.com/BOJACK-Capacitor-Multilayer-Monolithic-Assortment/dp/B085RLXXBK
 
-    - 1x 100uF >100V photo flash capacitor
+    - 1x 100uF >100V photo flash capacitor or LOW ESR
     - 1x 680uf 25v capacitor 8mm diameter; 5mm grid
-    - 1x 680uf 16v capacitor 8mm diameter; 5mm grid
+    - 1x 680uf 16v or 25v capacitor 8mm diameter; 5mm grid
     - 1x 1000µF 25V capacitor;
 
 
@@ -316,7 +319,7 @@ https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09
 
 + Screw terminals
 
-	- 1x 2 pole terminal 5mm grid ( for 12v power )
+	- 1x 2 pole terminal 5mm grid ( for 12v power > 10A )
 	- 4x 4 pole terminal 5mm grid ( to connect the steppers. One for each axis )
 
 * Pin sockets
@@ -331,22 +334,26 @@ https://www.amazon.com/Soldering-Ceramic-Adjustable-Temperature-Repairing/dp/B09
 * Pin headers
 
 	- 1x 1x11 Pin Header
-	- 6x 1x2  Pin Header
+	- 9x 1x2  Pin Header
 	- 1x 2x2  Pin Header ( this one is a two row header 2x2 pins. It is possible to use 2 1x2 headers too )
 
     These will work for the single row pin headers and can be cut to size:
     https://www.amazon.com/HiLetgo-20pcs-2-54mm-Single-Header/dp/B07R5QDL8D
+    
+* Jumper caps
+
+        - 2x 1x2 jumper cap - low height
 
 
     Note: In the example images there where pin sockets used instead of pin headers. It works too but is not recommended. The jumper wire pins won't hold very tight in these sockets.
 
 
-* Capacitors
+* Capacitors ( If it needs to be low ESR it will be listed as such. If it is not listed as low ESR then don't use low esr. )
 
-	- 1x 680uf 25v capacitor 8mm diameter; 5mm grid
-	- 1x 680uf 16v capacitor 8mm diameter; 5mm grid
-	- 1x 47uf 63v capacitor <= 8mm diameter; 5mm grid; ( this one can be 16v too. I had them and used them. )
-	- 3x 100nF 50v ceramic disc capacitor
+	- 1x 1000uf 25v 10mm diameter, 5mm grid ( old version is ok too: 680uf 25v capacitor 8mm diameter; 5mm grid )
+	- 1x 680uf 16v or 25v capacitor 8mm diameter; 5mm grid;
+	- 1x 47uf 50v capacitor; 5mm grid;
+	- 3x 100nF 50v ceramic disc capacitor; (104)
 
 
 * Resistors

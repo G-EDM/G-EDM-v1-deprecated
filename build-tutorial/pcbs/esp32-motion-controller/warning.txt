@@ -1,3 +1,14 @@
+# V2 vs V1
+
+The first prototype (V1) and the new board have only minor changes. V2 exposes more Pins to the user, but they are not used yet.
+
+The biggest change is the Z axis microstepping. Z microstepping on the V2 board is now set via jumpers while with V1 the Z microsteps where set via software and GPIOs.
+
+Also unused capacitors and pulldown resistors where removed. 
+
+The pinout of the boards pin headers remains the same. The internal software pinout has a minor change to one single Pin. The DIR Pin of the spindle motor has changed. But that is managed by the software.
+
+
 # Important
 
     Only one GND wire is connected from the ESP32 motion controller to the pulseboard. 
