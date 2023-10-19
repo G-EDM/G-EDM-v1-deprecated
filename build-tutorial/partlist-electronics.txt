@@ -258,7 +258,7 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
 
     - 1x R560 5W axial ( length: 17mm; dia: 6mm )
     - 1x R560 2W
-    - 6x R4.7 2W ( Used as gate resistor. This value could change to 10Ohm 2W later. Maybe. )
+    - 6x R4.7 2W ( Used as gate resistor. This value could change to 6.8Ohm 2W later. Maybe it works better. )
     - 6x 100kOhm 1W ( Used as pulldown for the Mosfet gates )
     - 1x R220 1W ( used as current limiter for the PWM signal to the optocoupler )
     - 1x R200 1W ( used as current limiter to the PWM indicator LED. Can be R220 too. )

@@ -42,7 +42,7 @@
  # Resistors
  
 R8, R9, R14, R15, R19, R22 = 100kOhm 1W ( pulldown resistor for the mosfet gate )
-R6, R7, R12, R13, R18, R21 = R4.7 2W    ( Mosfet gate resistors )
+R6, R7, R12, R13, R18, R21 = R4.7 2W    ( Mosfet gate resistors. Value could change to 6.8Ohm later if it works better. )
 
 
 R3 = R560 5W axial
