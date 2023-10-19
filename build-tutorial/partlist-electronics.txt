@@ -158,7 +158,7 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
 * Capacitors ( If it needs to be low ESR it will be listed as such. If it is not listed as low ESR then don't use low esr. )
 
     - 1x 100uF >100V photo flash capacitor ( a normal low ESR capcitor should work too )
-    - 2x 47uf 63v capacitors 
+    - 2x 47uf 63v capacitors ( voltage rating can be lower too and is not critical )
     - 3x 100pF (or larger) 500V ceramic disc capacitors 5mm grid; ( CT81 high voltage ceramic capacitor is what I use. It needs to be >100v and < 0.1uF )
     - 3x 100nf 50V ceramic disc capacitors 5mm grid;
     https://www.amazon.com/BOJACK-Capacitor-Multilayer-Monolithic-Assortment/dp/B085RLXXBK
@@ -278,8 +278,7 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
     https://www.amazon.com/BOJACK-Capacitor-Multilayer-Monolithic-Assortment/dp/B085RLXXBK
 
     - 1x 100uF >100V photo flash capacitor or LOW ESR
-    - 1x 680uf 25v capacitor 8mm diameter; 5mm grid
-    - 1x 680uf 16v or 25v capacitor 8mm diameter; 5mm grid
+    - 2x 680uf 25v capacitor 8mm diameter; 5mm grid
     - 1x 1000µF 25V capacitor;
 
 
@@ -351,7 +350,7 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
 * Capacitors ( If it needs to be low ESR it will be listed as such. If it is not listed as low ESR then don't use low esr. )
 
 	- 1x 1000uf 25v 10mm diameter, 5mm grid ( old version is ok too: 680uf 25v capacitor 8mm diameter; 5mm grid )
-	- 1x 680uf 16v or 25v capacitor 8mm diameter; 5mm grid;
+	- 1x 680uf 25v capacitor 8mm diameter; 5mm grid;
 	- 1x 47uf 50v capacitor; 5mm grid;
 	- 3x 100nF 50v ceramic disc capacitor; (104)
 
