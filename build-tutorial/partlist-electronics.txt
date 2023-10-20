@@ -281,7 +281,7 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
 
     - 1x 100uF >100V photo flash capacitor or LOW ESR
     - 2x 680uf 25v capacitor 8mm diameter; 5mm grid
-    - 1x 220uf 100V capacitor; (this one is used a bulk capacitor on the 12v terminal. Using different ones should be ok but this is the one used on the protoype and therefore it will be kept as recommend until other caps are confirmed working)
+    - 1x 220uf 100V capacitor; 7,5mm grid; (this one is used a bulk capacitor on the 12v terminal. Using different ones should be ok but this is the one used on the protoype and therefore it will be kept as recommend until other caps are confirmed working)
 
 
 * Terminals
@@ -351,8 +351,8 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
 
 * Capacitors ( If it needs to be low ESR it will be listed as such. If it is not listed as low ESR then don't use low esr. )
 
-	- 1x 1000uf 25v 10mm diameter, 5mm grid ( old version is ok too: 680uf 25v capacitor 8mm diameter; 5mm grid )
-	- 1x 680uf 25v capacitor 8mm diameter; 5mm grid;
+	- 1x 680uf 25v capacitor 8mm diameter; 5mm grid );
+	- 1x 680uf 16 or 25v capacitor max 8mm diameter; 5mm grid;
 	- 1x 47uf 50v capacitor; 5mm grid;
 	- 3x 100nF 50v ceramic disc capacitor; (104)
 
