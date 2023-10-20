@@ -5,7 +5,9 @@
 Don't bother with 30-60W soldering irons. The board uses power and gnd planes without thermal reliefs. The connections between the legs and the planes are fully filled and the heat applied will spread rapidly across the planes. A 30W soldering iron will not be able to keep up with this. It can be done somehow but I don't recommend it.
 
 
-I use this soldering iron with the a big (not small not medium but BIG ) single flat tip. The small tips again won't do it for connections to the gnd and power plane, but will work for the non plane connections. Only use higher power if needed! If a contact seems hard to solder the power can be increased. For all other contacts normal power is ok.
+I use this soldering iron with the a big (not small not medium but BIG ) 4mm single flat tip. The small tips again won't do it for connections to the gnd and power plane, but will work for the non plane connections. Only use higher power if needed! If a contact seems hard to solder the power can be increased. For all other contacts normal power is ok.
+
+This one has 90W and it is still a little to weak to solder the big terminals on the big planes. 120W would be better. I just used two irons (90W+60W) to get a nice connection. 
 
 https://www.amazon.de/Elektrische-gesteuertem-automatischem-Schlafmodus-elektronische/dp/B09KGCSG83
  
@@ -279,7 +281,7 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
 
     - 1x 100uF >100V photo flash capacitor or LOW ESR
     - 2x 680uf 25v capacitor 8mm diameter; 5mm grid
-    - 1x 1000µF 25V capacitor;
+    - 1x 220uf 100V capacitor; (this one is used a bulk capacitor on the 12v terminal. Using different ones should be ok but this is the one used on the protoype and therefore it will be kept as recommend until other caps are confirmed working)
 
 
 * Terminals
@@ -358,7 +360,7 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
 * Resistors
 
 	- 2x 1k   1/2W resistor
-	- 2x 100k 1/2W resistor ( Buy 3 of them. Maybe one is used later for the vSense input pin )
+	- 3x 100k 1/2W resistor ( Buy 3 of them. Maybe one is used later for the vSense input pin )
 	( The build images show larger resistors but they are heavily oversized )
 
 
@@ -369,7 +371,4 @@ https://www.amazon.de/RMENOOR-L%C3%B6tkolbenspitzen-L%C3%B6tspitzen-Schwei%C3%9F
 	https://www.amazon.com/Comidox-Position-Switch-Module-Terminals/dp/B07LBMC9HV
 
 
-* Diode
-
-    - 1x 1N4001 diode or similar. ( For the 12v Fan output. Not tested yet. )
 
