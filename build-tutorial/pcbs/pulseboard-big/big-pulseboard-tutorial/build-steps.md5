@@ -1,0 +1,47 @@
+# Important warning
+
+The trim poti is used to adjust the feedback voltage that goes to the ESP. There is no protection! If the trim poti is not set correct before the feedback is connected to the ESP32 is may deliver voltages that will destroy the ESP.
+
+Before connecting the ESP the trim poti needs to be set. Counter clockwise will reduce the voltage, while clockwise will increase the voltage. The output should be 2.8v at the highest voltage used. If a 60v PSU is used it should output 2.8v@60v. If 110v is used it should output 2.8v@110v.
+
+If no multimeter is available it is possible to use a LED to test it. Rotate the trim poti counter clockwise for multiple turns. Connect the LEDs positive leg to the vSense output and the negative to the unused gnd next to it in the same terminal.
+
+Then power up the spark PSU at the max voltage. There should now be a tiny voltage on the LED but not enough to make the LED glow. Rotate the poti clockwise until the LED starts glowing slightly. Now it is safe to connect the ESP. After the ESP is connected the feedback voltage is visible on the display and can then be fine tuned to match 2.8v.
+
+
+
+C1, C10, C23 = 100nf 50V ceramic capacitors
+C9, C11, C14 = 100pF >100v ceramic capacitors
+C19 = 220uf 100V capacitor
+C2, c12 = 680uf 25v capacitor
+C4 = 100uF >100V photo flash capacitor 
+R5 = 1kOhm 1W
+R28 = R560 1W
+R2, R33 = 4.7kOhm 2W
+R29 = R200 1W
+R1  = R220 1W
+R4 = R560 2W
+R3 = R560 5W axial
+R6, R7, R12, R13, R18, R21 = R4.7 or R6.8 2W
+RV1 = 10kOhm 3296 Trim Pot 
+D1, D3, D6, D7, D10, D12 = SB 140 DIO Schottkydiode, 40 V, 1 A, DO-15
+Q8 = PNP 2SB688 BJT power transistor 
+Q7, Q10 = NPN 2SD718 BJT power transistor
+R8, R9, R14, R15, R19, R22 = 100kOhm 1W
+J1, J6 = small 2 pole screw terminal
+J2 = >10A 2 pole terminal
+U1 = DIP8 Socket
+R30, R31 = bridged with the clipped legs from a big resistor
+D16 = Low current LED green 
+D15 = LED blue
+J3, J4 = power terminals
+Q1, Q2, Q3, Q4, Q5, Q6 = IRFP260N Mosfet
+
+
+
+
+
+
+
+
+

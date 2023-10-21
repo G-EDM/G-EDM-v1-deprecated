@@ -25,9 +25,8 @@
  # Capacitors
  
  C4  = 100uF >100V photo flash or low ESR capacitor
- C19 = 1000µF 25V capacitor
- C2  = 680uf 16v capacitor
- c12 = 680uf 25v capacitor
+ C19 = 220uf 100v capacitor
+ C2, c12 = 680uf 25v capacitor
  
  # Bridges ( I clipped of two legs from a 5W resistor and bend them into a U shape. See the images for details )
  
