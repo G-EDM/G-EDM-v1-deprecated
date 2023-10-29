@@ -81,7 +81,6 @@ SDState  set_sd_state(SDState state);
 bool  openFile(const char* path);
 bool  closeFile();
 bool  readFileLine(char* line, int len);
-void     readFile(const char* path);
 uint32_t sd_get_current_line_number();
 void     sd_get_current_filename(char* name);
 

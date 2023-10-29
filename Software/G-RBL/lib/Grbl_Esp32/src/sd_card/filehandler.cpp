@@ -1,16 +1,29 @@
 /*
-#  ██████        ███████ ██████  ███    ███  
-# ██             ██      ██   ██ ████  ████  
-# ██   ███ █████ █████   ██   ██ ██ ████ ██ 
-# ██    ██       ██      ██   ██ ██  ██  ██ 
-#  ██████        ███████ ██████  ██      ██ 
-#
-# This is a beta version for testing purposes.
-# Only for personal use. Commercial use or redistribution without permission is prohibited. 
-*/ 
+  SDCard.cpp - Adds SD Card Features to Grbl_ESP32
+  Part of Grbl_ESP32
+
+  Copyright (c) 2018 Barton Dring Buildlog.net
+
+  Grbl is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Grbl is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
+
+  2023 - Roland Lautensack (G-EDM) This file was heavily edited and may no longer be compatible with the default grbl
+
+*/
 
 
-#include "sd_card/filehandler.h"
+
+#include "filehandler.h"
 
 SDState sd_state          = SDState::Idle;
 bool SD_ready_next        = false;
