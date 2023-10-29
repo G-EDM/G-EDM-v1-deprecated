@@ -1,14 +1,5 @@
 #pragma once
-/*
-#  ██████        ███████ ██████  ███    ███  
-# ██             ██      ██   ██ ████  ████  
-# ██   ███ █████ █████   ██   ██ ██ ████ ██ 
-# ██    ██       ██      ██   ██ ██  ██  ██ 
-#  ██████        ███████ ██████  ██      ██ 
-#
-# This is a beta version for testing purposes.
-# Only for personal use. Commercial use or redistribution without permission is prohibited. 
-*/ 
+
 #include <WString.h>
 //#include <FS.h>
 #include <SD.h>
