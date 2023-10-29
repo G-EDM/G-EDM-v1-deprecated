@@ -8,7 +8,6 @@
 #
 # This is a beta version for testing purposes.
 # Only for personal use. Commercial use or redistribution without permission is prohibited. 
-# Copyright (c) Roland Lautensack        
 */ 
 #include <WString.h>
 //#include <FS.h>
@@ -62,14 +61,6 @@ public:
     void close_current_folder( void );
     String get_next_filename( String extension );
     void storeBenchmarks( void );    
-    void listDir( const char * dirname, uint8_t levels );
-    void createDir( const char * path );
-    void removeDir( const char * path );
-    void writeFile( const char * path, const char * message );
-    void appendFile( const char * path, const char * message );
-    void renameFile( const char * path1, const char * path2 );
-    void deleteFile( const char * path );
-    void testFileIO( const char * path );
     int get_error_code( void );
     int count_files_in_folder_by_extension( String folder, String extension );
     void get_files_in_folder_by_extension( String folder, String extension, char files[][100] );
