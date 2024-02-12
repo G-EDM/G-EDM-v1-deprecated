@@ -134,7 +134,7 @@ For those interested in a raw, low cost and cool looking desktop edm machine I c
 
 https://github.com/alextreseder/picoEDM
 
-<img src="https://github.com/alextreseder/picoEDM/blob/main/picoEDM.PNG">
+<img src="https://raw.githubusercontent.com/alextreseder/picoEDM/master/renders/PicoEDM_Render_Front_64.png">
 
 
 
