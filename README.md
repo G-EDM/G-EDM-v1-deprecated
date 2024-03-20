@@ -1,19 +1,13 @@
 Work in progress. 
 
+# New design, new code, new sensing... Coming soon. 
 
-# G-RBL beta discovers the wild! 
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/build/2.jpg">
 
-Finally the G-RBL beta release is available! Read it now!
+<img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/build/control-panel-v2-tech.png">
 
-# Things that will follow soon
 
-An EMI safe protocol to have a way to communicate with G-RBL even if no touchscreen is attached
 
-Support for laser and normal milling operations
-
-Support for router type mills
-
-A fully GCode operated process that can be disabled to let the software take over the important things
 
 
 # Changelog
