@@ -1,5 +1,7 @@
 Work in progress. 
 
+Check out the new Gantry router: https://github.com/G-EDM/GEDM-EVO2-CNC
+
 # New design, new code, new sensing... Coming soon. 
 
 <img src="https://raw.githubusercontent.com/G-EDM/G-EDM/main/images/build/2.jpg">
