@@ -1,4 +1,6 @@
-Work in progress. 
+Deprecated! Check the other repos for the new G-EDM EVOII stuff.
+
+
 
 Check out the new Gantry router: https://github.com/G-EDM/GEDM-EVO2-CNC
 
